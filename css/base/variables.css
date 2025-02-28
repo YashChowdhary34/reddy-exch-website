@@ -1,0 +1,54 @@
+:root {
+  /* ----------color palette---------- */
+  --color-black: rgb(0, 0, 0);
+  --color-grey-darkest: rgb(52, 58, 64);
+  --color-grey-dark: rgb(73, 80, 87);
+  --color-grey-medium: rgb(108, 117, 125);
+  --color-grey-light: rgb(173, 181, 189);
+  --color-white: rgb(255, 255, 255);
+  --color-accent: rgb(227, 27, 35);
+
+  /* ----------fonts---------- */
+  --header-font: "Bebas Neue", sans-serif;
+  --primary-font: "Inter", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+
+  /* ----------spacing----------*/
+  --space-2xs: clamp(0.25rem, 0.2vw + 0.2rem, 0.375rem);
+  --space-xs: clamp(0.5rem, 0.4vw + 0.4rem, 0.75rem);
+  --space-sm: clamp(0.75rem, 0.7vw + 0.6rem, 1.125rem);
+  --space-md: clamp(1rem, 1vw + 0.8rem, 1.5rem);
+  --space-lg: clamp(1.5rem, 1.5vw + 1.2rem, 2.25rem);
+  --space-xl: clamp(2rem, 2vw + 1.6rem, 3rem);
+  --space-2xl: clamp(3rem, 3vw + 2.4rem, 4.5rem);
+  --space-3xl: clamp(4rem, 4vw + 3.2rem, 6rem);
+  --space-4xl: clamp(5rem, 5vw + 4rem, 8rem);
+  --space-5xl: clamp(6rem, 6vw + 4.8rem, 10rem);
+  --space-6xl: clamp(7rem, 7vw + 5.6rem, 12rem);
+  --space-7xl: clamp(8rem, 8vw + 6.4rem, 14rem);
+  --space-8xl: clamp(9rem, 9vw + 7.2rem, 16rem);
+  --space-9xl: clamp(10rem, 10vw + 8rem, 18rem);
+
+  /* ----------typography---------- */
+  --text-2xs: clamp(0.25rem, 0.35vw + 0.25rem, 0.5rem);
+  --text-xs: clamp(0.5rem, 0.45vw + 0.4rem, 0.75rem);
+  --text-sm: clamp(0.75rem, 0.65vw + 0.55rem, 1rem);
+  --text-base: clamp(1rem, 0.9vw + 0.7rem, 1.25rem);
+  --text-lg: clamp(1.25rem, 1.15vw + 0.85rem, 1.5rem);
+  --text-xl: clamp(1.5rem, 1.4vw + 1rem, 2rem);
+  --text-2xl: clamp(1.75rem, 1.65vw + 1.2rem, 2.5rem);
+  --text-3xl: clamp(2.25rem, 2.15vw + 1.6rem, 3rem);
+  --text-4xl: clamp(2.75rem, 2.65vw + 2rem, 3.5rem);
+  --text-5xl: clamp(3.5rem, 3.5vw + 2.8rem, 4.5rem);
+  --text-6xl: clamp(4.5rem, 4.5vw + 3.6rem, 6rem);
+  --text-7xl: clamp(5.5rem, 5.5vw + 4.4rem, 7.5rem);
+  --text-8xl: clamp(6.5rem, 6.5vw + 5.2rem, 9rem);
+
+  /* ---------transitions---------- */
+  --transition-duration: 0.3s;
+  --transition-duration-short: 0.2s;
+  --transition-ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: all var(--transition-duration) var(--transition-ease);
+  --transition-short: all var(--transition-duration-short)
+    var(--transition-ease);
+}
