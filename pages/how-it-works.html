@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-mode">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReddyExch - How It Works</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/components/how-it-works.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="../js/script.js"></script>
+  </head>
+  <body>
+    <button
+      id="theme-toggle"
+      class="theme-toggle"
+      aria-label="Toggle dark/light mode"
+    >
+      <div class="toggle-circle">
+        <span class="toggle-icon moon-icon" style="opacity: 0">🌙</span>
+        <span class="toggle-icon sun-icon" style="opacity: 1">☀️</span>
+      </div>
+    </button>
+    <section id="booklet" class="booklet-section">
+      <div class="booklet-container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="title-primary">How It</span>
+            <span class="title-secondary">Works</span>
+          </h2>
+        </div>
+
+        <!-- Process Steps -->
+        <div class="process-steps">
+          <div class="step-item">
+            <div class="step-icon">
+              <div class="step-circle">
+                <span class="step-number">1</span>
+              </div>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Contact Us</h3>
+              <p class="step-description">
+                Message us on our WhatsApp number to get started with your
+                sports betting ID.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-connector">
+            <div class="connector-arrows">
+              <span class="arrow">&gt;</span>
+              <span class="arrow">&gt;</span>
+              <span class="arrow">&gt;</span>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-icon">
+              <div class="step-circle">
+                <span class="step-number">2</span>
+              </div>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Verify Information</h3>
+              <p class="step-description">
+                Our team will provide all necessary information and ensure
+                complete satisfaction.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-connector">
+            <div class="connector-arrows">
+              <span class="arrow">&gt;</span>
+              <span class="arrow">&gt;</span>
+              <span class="arrow">&gt;</span>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-icon">
+              <div class="step-circle">
+                <span class="step-number">3</span>
+              </div>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Fund Your Account</h3>
+              <p class="step-description">
+                Start depositing and withdrawing funds instantly through
+                multiple payment methods.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-connector">
+            <div class="connector-arrows">
+              <span class="arrow">&gt;</span>
+              <span class="arrow">&gt;</span>
+              <span class="arrow">&gt;</span>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-icon">
+              <div class="step-circle">
+                <span class="step-number">4</span>
+              </div>
+            </div>
+            <div class="step-content">
+              <h3 class="step-title">Start Betting</h3>
+              <p class="step-description">
+                Begin placing bets and earn from your skills and knowledge of
+                sports.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Booklet -->
+        <div class="interactive-booklet">
+          <div class="booklet-header">
+            <h3 class="booklet-title">Detailed Guide</h3>
+            <p class="booklet-subtitle">
+              Explore our comprehensive guide to learn more about sports betting
+            </p>
+          </div>
+
+          <div class="booklet-viewer">
+            <div class="booklet-controls">
+              <button
+                id="prev-page"
+                class="booklet-btn"
+                aria-label="Previous page"
+              >
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <div class="page-indicator">
+                <span id="current-page">1</span>/<span id="total-pages">5</span>
+              </div>
+              <button id="next-page" class="booklet-btn" aria-label="Next page">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+
+            <div class="booklet-pages">
+              <!-- Page 1 -->
+              <div class="booklet-page active" data-page="1">
+                <div class="page-content">
+                  <h3 class="page-title">Getting Started</h3>
+                  <div class="page-image">
+                    <img
+                      src="./src/booklet-page1.png"
+                      alt="Getting Started Guide"
+                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
+                    />
+                  </div>
+                  <div class="page-text">
+                    <p>
+                      Welcome to ReddyExch! This guide will help you understand
+                      the basics of sports betting with our platform.
+                    </p>
+                    <p>
+                      Our platform offers a wide range of sports events to bet
+                      on, competitive odds, and secure transactions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Page 2 -->
+              <div class="booklet-page" data-page="2">
+                <div class="page-content">
+                  <h3 class="page-title">Account Setup</h3>
+                  <div class="page-image">
+                    <img
+                      src="./src/booklet-page2.png"
+                      alt="Account Setup Guide"
+                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
+                    />
+                  </div>
+                  <div class="page-text">
+                    <p>Setting up your account is easy and secure:</p>
+                    <ul>
+                      <li>Contact us via WhatsApp at +91 7450007079</li>
+                      <li>Verify your identity with basic information</li>
+                      <li>Get your unique betting ID immediately</li>
+                      <li>Set up your preferred payment methods</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Page 3 -->
+              <div class="booklet-page" data-page="3">
+                <div class="page-content">
+                  <h3 class="page-title">Placing Bets</h3>
+                  <div class="page-image">
+                    <img
+                      src="./src/booklet-page3.png"
+                      alt="Placing Bets Guide"
+                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
+                    />
+                  </div>
+                  <div class="page-text">
+                    <p>Learn how to place bets efficiently:</p>
+                    <ol>
+                      <li>Log in to your account</li>
+                      <li>Browse available events</li>
+                      <li>Select your preferred market</li>
+                      <li>Enter your stake amount</li>
+                      <li>Confirm your bet</li>
+                    </ol>
+                    <p>
+                      Our platform offers various betting options including
+                      match winner, over/under, handicaps, and more.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Page 4 -->
+              <div class="booklet-page" data-page="4">
+                <div class="page-content">
+                  <h3 class="page-title">Deposits & Withdrawals</h3>
+                  <div class="page-image">
+                    <img
+                      src="./src/booklet-page4.png"
+                      alt="Payment Methods Guide"
+                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
+                    />
+                  </div>
+                  <div class="page-text">
+                    <p>We support multiple payment methods:</p>
+                    <ul>
+                      <li>Bank Transfer</li>
+                      <li>Net Banking</li>
+                      <li>UPI (Google Pay, PhonePe, Paytm)</li>
+                      <li>IMPS</li>
+                    </ul>
+                    <p>
+                      Enjoy instant deposits and 24/7 withdrawals with minimal
+                      processing time.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Page 5 -->
+              <div class="booklet-page" data-page="5">
+                <div class="page-content">
+                  <h3 class="page-title">Responsible Gambling</h3>
+                  <div class="page-image">
+                    <img
+                      src="./src/booklet-page5.png"
+                      alt="Responsible Gambling Guide"
+                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
+                    />
+                  </div>
+                  <div class="page-text">
+                    <p>At ReddyExch, we promote responsible gambling:</p>
+                    <ul>
+                      <li>Set personal limits for deposits and bets</li>
+                      <li>Take regular breaks from betting</li>
+                      <li>Never chase losses</li>
+                      <li>Bet for entertainment, not as a source of income</li>
+                      <li>Contact our support team if you need assistance</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="booklet-cta">
+          <div class="cta-content">
+            <h3 class="cta-title">Ready to Start?</h3>
+            <p class="cta-description">
+              Get your betting ID now and join thousands of players on India's
+              top exchange
+            </p>
+            <a
+              href="http://wa.aisensy.com/+917450007079"
+              class="cta-button"
+              rel="noopener"
+            >
+              <i class="fab fa-whatsapp"></i> Contact Us on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Theme Toggle -->
+      <div class="theme-toggle-container">
+        <button
+          id="theme-toggle"
+          class="theme-toggle-btn"
+          aria-label="Toggle theme"
+        >
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+        </button>
+      </div>
+    </section>
+
+    <script src="./js/hiw-script.js"></script>
+  </body>
+</html>

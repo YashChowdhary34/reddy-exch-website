@@ -52,3 +52,161 @@
   --transition-short: all var(--transition-duration-short)
     var(--transition-ease);
 }
+
+.dark-mode {
+  --color-black: rgb(255, 255, 255);
+  --color-grey-darkest: rgb(203, 197, 192);
+  --color-grey-dark: rgb(182, 175, 171);
+  --color-grey-medium: rgb(147, 138, 132);
+  --color-grey-light: rgb(82, 76, 71);
+  --color-white: rgb(0, 0, 0);
+  --color-accent: rgb(227, 27, 35);
+}
+
+/* ----------animations---------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes pulseGlow {
+  0% {
+    filter: drop-shadow(0 0 2px rgba(227, 27, 35, 0.1));
+  }
+  100% {
+    filter: drop-shadow(0 0 8px rgba(227, 27, 35, 0.7));
+  }
+}
+
+@keyframes expandLine {
+  0% {
+    width: 25%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes moveTopDownTop {
+  0% {
+    transform: translateY(0);
+    filter: blur(0);
+  }
+  50% {
+    transform: translateY(50px);
+    filter: blur(2px);
+  }
+  66.67% {
+    transform: translateY(50px);
+    filter: blur(2px);
+  }
+  100% {
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes moveLeftRightLeft {
+  0% {
+    transform: translateX(0);
+    filter: blur(0);
+  }
+  50% {
+    transform: translateX(50px);
+    filter: blur(2px);
+  }
+  66.67% {
+    transform: translateX(50px);
+    filter: blur(2px);
+  }
+  100% {
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes arrowFlow {
+  0% {
+    transform: translateX(-10px);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(10px);
+    opacity: 0.3;
+  }
+}

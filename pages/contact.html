@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact-ReddyExch</title>
+    <link rel="stylesheet" href="../css/components/contact.css" />
+    <script src="../js/script.js"></script>
+  </head>
+  <body>
+    <button
+      id="theme-toggle"
+      class="theme-toggle"
+      aria-label="Toggle dark/light mode"
+    >
+      <div class="toggle-circle">
+        <span class="toggle-icon moon-icon" style="opacity: 0">🌙</span>
+        <span class="toggle-icon sun-icon" style="opacity: 1">☀️</span>
+      </div>
+    </button>
+    <header class="contact-header">Contact Us</header>
+    <main>
+      <section class="contact-container">
+        <div class="contact-info">
+          <address>
+            <div class="info-group">
+              <h2 class="info-label">Phone:</h2>
+              <p class="info-content">
+                <a href="http://wa.aisensy.com/+917450007079">+91 7450007079</a>
+              </p>
+            </div>
+            <div class="info-group">
+              <h2 class="info-label">Email:</h2>
+              <p class="info-content">
+                <a href="mailto:exchangereddy.master@gmail.com"
+                  >exchangereddy.master@gmail.com</a
+                >
+              </p>
+            </div>
+            <div class="info-group">
+              <h2 class="info-label">Opening Hours:</h2>
+              <p class="info-content">
+                <time datetime="08:00">8:00 am</time> –
+                <time datetime="19:00">8:00 am</time> <br />
+                Open - 24×7
+              </p>
+            </div>
+            <div class="info-group">
+              <h2 class="info-label">Local Time:</h2>
+              <p class="info-content" id="localTime">
+                <script>
+                  document.getElementById("localTime").textContent =
+                    new Date().toLocaleString("en-IN", {
+                      timeZone: "Asia/Kolkata",
+                      hour12: true,
+                      hour: "numeric",
+                      minute: "numeric",
+                    });
+                </script>
+              </p>
+            </div>
+          </address>
+        </div>
+
+        <div class="contact-form">
+          <p class="form-intro">Do not hesitate to contact us.</p>
+          <form
+            method="post"
+            action="/submit-contact"
+            aria-label="Contact form"
+          >
+            <div class="form-group">
+              <label for="name" class="form-label">Your name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input"
+                placeholder="Enter Name"
+                required
+                aria-required="true"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="hello@example.com"
+                required
+                aria-required="true"
+              />
+            </div>
+            <div class="form-group">
+              <label for="company" class="form-label">I live at</label>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                class="form-input"
+                placeholder="address"
+              />
+            </div>
+            <div class="form-group">
+              <label for="details" class="form-label">Any Details</label>
+              <textarea
+                id="details"
+                name="details"
+                class="form-textarea"
+                placeholder="I want to talk about..."
+                rows="5"
+                required
+                aria-required="true"
+              ></textarea>
+            </div>
+            <button type="submit" class="form-button">Send Message</button>
+          </form>
+
+          <div class="social-links">
+            <h2 class="visually-hidden">Social Media Links</h2>
+            <ul>
+              <li>
+                <a href="#" aria-label="Instagram profile">Instagram</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/yash-chowdhary-670b52323/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn profile"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/YashChowdhary34"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub profile"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        ReddyExch, All Rights Reserved
+      </p>
+    </footer>
+    <script defer>
+      function updateLocalTime() {
+        document.getElementById("localTime").textContent =
+          new Date().toLocaleString("en-IN", {
+            timeZone: "Asia/Kolkata",
+            hour12: true,
+            hour: "numeric",
+            minute: "numeric",
+          });
+      }
+
+      updateLocalTime();
+      setInterval(updateLocalTime, 60000);
+    </script>
+  </body>
+</html>

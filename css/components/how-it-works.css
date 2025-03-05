@@ -1,0 +1,409 @@
+:root {
+  /* Dark Mode Colors */
+  --bg-primary: #121212;
+  --bg-secondary: #1e1e1e;
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --accent-color: #e63946;
+  --accent-hover: #ff4d5a;
+  --border-color: #2c2c2c;
+
+  /* ----------theme variables---------- */
+  --background-color: var(--color-grey-lightest);
+  --text-color: var(--color-grey-darkest);
+  --card-background: var(--color-white);
+  --input-background: var(--color-grey-lightest);
+  --border-color: var(--color-grey-light);
+  --button-background: var(--color-grey-darkest);
+  --button-text: var(--color-white);
+  --accent-color: var(--color-accent);
+
+  /* Light Mode Colors (optional, can be added later) */
+  --light-bg-primary: #ffffff;
+  --light-bg-secondary: #f4f4f4;
+  --light-text-primary: #333333;
+  --light-text-secondary: #666666;
+}
+
+/* ----- Dark theme ----- */
+:root.dark-theme {
+  --background-color: rgb(18, 18, 20);
+  --text-color: rgb(230, 230, 230);
+  --card-background: rgb(28, 28, 30);
+  --input-background: rgb(38, 38, 40);
+  --border-color: rgb(60, 60, 65);
+  --button-background: var(--color-accent);
+  --button-text: var(--color-white);
+  --accent-color: rgb(250, 82, 82);
+}
+
+/* Global Reset and Base Styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.booklet-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.section-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.title-primary {
+  color: var(--text-primary);
+}
+
+.title-secondary {
+  color: var(--accent-color);
+}
+
+/* Process Steps */
+.process-steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.step-icon {
+  margin-bottom: 1rem;
+}
+
+.step-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--bg-secondary);
+  border: 2px solid var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.step-circle:hover {
+  transform: scale(1.1);
+}
+
+.step-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+.step-content {
+  max-width: 250px;
+}
+
+.step-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.step-description {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.step-connector {
+  flex-grow: 1;
+  position: relative;
+}
+
+.connector-arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  opacity: 0.5;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  margin: 0 0.5rem;
+  animation: arrowFlow 1.5s infinite;
+}
+
+/* Interactive Booklet */
+.interactive-booklet {
+  background-color: var(--bg-secondary);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.booklet-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.booklet-title {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.booklet-subtitle {
+  color: var(--text-secondary);
+}
+
+.booklet-viewer {
+  background-color: var(--bg-primary);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.booklet-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.booklet-btn {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booklet-btn:hover {
+  background-color: var(--accent-hover);
+}
+
+.page-indicator {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+.booklet-page {
+  display: none;
+}
+
+.booklet-page.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+.page-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.page-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.page-text {
+  color: var(--text-secondary);
+}
+
+.page-text ul,
+.page-text ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* CTA Section */
+.booklet-cta {
+  background-color: var(--bg-secondary);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.cta-description {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-3px);
+}
+
+/* ----- Theme Toggle ----- */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 30px;
+  border-radius: 15px;
+  background: var(--card-background);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  transition: var(--transition);
+  overflow: hidden;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.05);
+}
+
+.toggle-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  transform: translateX(0);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.dark-theme .toggle-circle {
+  transform: translateX(20px);
+  background: var(--color-accent);
+}
+
+.toggle-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--card-background);
+  font-size: 12px;
+  transition: var(--transition);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .process-steps {
+    flex-direction: column;
+  }
+
+  .step-item {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .step-connector {
+    display: none;
+  }
+
+  .page-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .step-number {
+    font-size: 1.5rem;
+  }
+
+  .step-title {
+    font-size: 1.2rem;
+  }
+  .theme-toggle {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes arrowFlow {
+  0% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
