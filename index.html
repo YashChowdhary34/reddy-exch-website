@@ -119,7 +119,6 @@
             Audio
           </button>
         </div>
-        <!-- Add this to your existing index.html, inside the <nav> element, right after the .navlinks -->
         <div class="hamburger-menu" aria-label="Mobile Menu Toggle">
           <div class="hamburger-container">
             <div class="hamburger-line top-line"></div>
@@ -149,8 +148,8 @@
               </li>
             </ul>
             <div class="mobile-nav-actions">
-              <button class="mobile-theme-toggle">Toggle Theme</button>
-              <button class="mobile-audio-toggle">Toggle Audio</button>
+              <button class="mobile-theme-toggle mobile-theme-button"></button>
+              <button class="mobile-audio-toggle mobile-theme-button"></button>
             </div>
           </div>
         </div>
@@ -442,6 +441,160 @@
             <div class="hiw-step-text">Earn from your skills</div>
           </div>
         </div>
+        <article class="interactive-booklet">
+          <div class="booklet-header">
+            <h3 class="booklet-title">Detailed Guide</h3>
+            <p class="booklet-subtitle">
+              Explore our comprehensive guide to learn more about sports betting
+            </p>
+          </div>
+
+          <div class="booklet-viewer">
+            <div class="booklet-controls">
+              <button
+                id="prev-page"
+                class="booklet-btn"
+                aria-label="Previous page"
+              >
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <div class="page-indicator">
+                <span id="current-page">1</span>/<span id="total-pages">5</span>
+              </div>
+              <button id="next-page" class="booklet-btn" aria-label="Next page">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+
+            <div class="booklet-pages">
+              <!-- Page 1 -->
+              <div class="booklet-page active" data-page="1">
+                <div class="page-content">
+                  <h3 class="page-title">Getting Started</h3>
+                  <div class="page-image">
+                    <img
+                      src="./src/booklet-page1.png"
+                      alt="Getting Started Guide"
+                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
+                    />
+                  </div>
+                  <div class="page-text">
+                    <p>
+                      Welcome to ReddyExch! This guide will help you understand
+                      the basics of sports betting with our platform.
+                    </p>
+                    <p>
+                      Our platform offers a wide range of sports events to bet
+                      on, competitive odds, and secure transactions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Page 2 -->
+              <div class="booklet-page" data-page="2">
+                <div class="page-content">
+                  <h3 class="page-title">Account Setup</h3>
+                  <div class="page-image">
+                    <img
+                      src="./src/booklet-page2.png"
+                      alt="Account Setup Guide"
+                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
+                    />
+                  </div>
+                  <div class="page-text">
+                    <p>Setting up your account is easy and secure:</p>
+                    <ul>
+                      <li>Contact us via WhatsApp at +91 7450007079</li>
+                      <li>Verify your identity with basic information</li>
+                      <li>Get your unique betting ID immediately</li>
+                      <li>Set up your preferred payment methods</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Page 3 -->
+              <div class="booklet-page" data-page="3">
+                <div class="page-content">
+                  <h3 class="page-title">Placing Bets</h3>
+                  <div class="page-image">
+                    <img
+                      src="./src/booklet-page3.png"
+                      alt="Placing Bets Guide"
+                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
+                    />
+                  </div>
+                  <div class="page-text">
+                    <p>Learn how to place bets efficiently:</p>
+                    <ol>
+                      <li>Log in to your account</li>
+                      <li>Browse available events</li>
+                      <li>Select your preferred market</li>
+                      <li>Enter your stake amount</li>
+                      <li>Confirm your bet</li>
+                    </ol>
+                    <p>
+                      Our platform offers various betting options including
+                      match winner, over/under, handicaps, and more.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Page 4 -->
+              <div class="booklet-page" data-page="4">
+                <div class="page-content">
+                  <h3 class="page-title">Deposits & Withdrawals</h3>
+                  <div class="page-image">
+                    <img
+                      src="./src/booklet-page4.png"
+                      alt="Payment Methods Guide"
+                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
+                    />
+                  </div>
+                  <div class="page-text">
+                    <p>We support multiple payment methods:</p>
+                    <ul>
+                      <li>Bank Transfer</li>
+                      <li>Net Banking</li>
+                      <li>UPI (Google Pay, PhonePe, Paytm)</li>
+                      <li>IMPS</li>
+                    </ul>
+                    <p>
+                      Enjoy instant deposits and 24/7 withdrawals with minimal
+                      processing time.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Page 5 -->
+              <div class="booklet-page" data-page="5">
+                <div class="page-content">
+                  <h3 class="page-title">Responsible Gambling</h3>
+                  <div class="page-image">
+                    <img
+                      src="./src/booklet-page5.png"
+                      alt="Responsible Gambling Guide"
+                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
+                    />
+                  </div>
+                  <div class="page-text">
+                    <p>At ReddyExch, we promote responsible gambling:</p>
+                    <ul>
+                      <li>Set personal limits for deposits and bets</li>
+                      <li>Take regular breaks from betting</li>
+                      <li>Never chase losses</li>
+                      <li>Bet for entertainment, not as a source of income</li>
+                      <li>Contact our support team if you need assistance</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
         <article class="hiw-cta">
           <div class="hiw-cta-header-1">
             ReddyExch is one of The Biggest Platform For Online Sports Betting
@@ -460,6 +613,23 @@
               <div class="hiw-cta-action-button">+91 7450007079</div>
             </div>
           </div>
+          <div class="booklet-cta">
+            <div class="cta-content">
+              <h3 class="cta-title">Ready to Start?</h3>
+              <p class="cta-description">
+                Get your betting ID now and join thousands of players on India's
+                top exchange
+              </p>
+              <a
+                href="http://wa.aisensy.com/+917450007079"
+                class="cta-button"
+                rel="noopener"
+              >
+                <i class="fab fa-whatsapp"></i> Contact Us on WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
         </article>
       </section>
       <section id="services" class="services" aria-label="Our Services">
@@ -519,6 +689,77 @@
           </div>
         </div>
       </section>
+      <section id="offers">
+        <div class="container">
+          <h2>Our Offers</h2>
+          <div class="offers-wrapper">
+            <!-- Withdraw Offers -->
+            <article class="offer-category" id="withdraw-offers">
+              <h3>Withdraw Offers</h3>
+              <ul class="offer-list">
+                <li>
+                  <strong>Withdraw ₹10,000+</strong> → Get
+                  <strong>₹500 Bonus!</strong>
+                </li>
+                <li>
+                  <strong>Withdraw ₹50,000+</strong> → Get
+                  <strong>₹3,000 Cashback</strong> or
+                  <strong>Apple AirPods!</strong>
+                </li>
+                <li>
+                  <strong>Withdraw ₹1,00,000+</strong> → Get
+                  <strong>₹10,000 Cashback</strong> or a
+                  <strong>Smartwatch!</strong>
+                </li>
+              </ul>
+            </article>
+
+            <!-- Referral Offers -->
+            <article class="offer-category" id="referral-offers">
+              <h3>Referral Offers</h3>
+              <ul class="offer-list">
+                <li>
+                  <strong>Refer 1 friend</strong> → Get
+                  <strong>₹500 instantly</strong>
+                </li>
+                <li>
+                  <strong>Refer 5 friends</strong> → Get
+                  <strong>₹3,000 Bonus</strong>
+                </li>
+                <li>
+                  <strong>Refer 10 friends</strong> → Get
+                  <strong>₹10,000 Bonus + VIP Access</strong>
+                </li>
+                <li>
+                  <strong>Refer 50 friends</strong> → Become an
+                  <strong
+                    >Affiliate Partner &amp; Earn ₹50,000+ Monthly!</strong
+                  >
+                </li>
+              </ul>
+            </article>
+
+            <!-- Jackpot Offers -->
+            <article class="offer-category" id="jackpot-offers">
+              <h3>Jackpot Offers</h3>
+              <ul class="offer-list">
+                <li>
+                  <strong>Withdraw ₹5,000+</strong> &amp; Enter the Weekly
+                  Jackpot Draw!
+                </li>
+              </ul>
+              <h4>Prizes Include:</h4>
+              <ul class="offer-list">
+                <li><strong>₹5,000 Cash Bonus</strong></li>
+                <li><strong>iPhone 15</strong></li>
+                <li><strong>Smartwatch &amp; Headphones</strong></li>
+                <li><strong>Mystery Box!</strong></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section id="cricket-score-widget" class="widget-section">
         <h2 class="widget-title">Live Cricket Scores</h2>
         <div id="score-frame">
