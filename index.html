@@ -28,10 +28,10 @@
       ReddyExch - India's Leading Sports Gaming Exchange | 24/7 Support
     </title>
 
+    <!-- Preload and load CSS files -->
     <link rel="preload" href="./css/base/reset.css" />
     <link rel="preload" href="./css/base/variables.css" />
     <link rel="preload" href="./css/styles.css" as="style" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,7 +40,6 @@
       media="print"
       onload="this.media='all'"
     />
-
     <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="stylesheet"
@@ -57,9 +56,12 @@
       sizes="180x180"
       href="./src/apple-touch-icon.png"
     />
+
+    <!-- Defer external script -->
     <script src="./js/script.js" defer></script>
   </head>
   <body>
+    <!-- HEADER & AGE VERIFICATION -->
     <header id="header" class="header">
       <div id="age-verification" class="age-verification">
         <div class="age-verification-content">
@@ -70,14 +72,11 @@
               class="verification-logo"
             />
           </div>
-
           <h2 class="verification-title">Age Verification</h2>
-
           <p class="verification-message">
             Welcome to ReddyExch! This site is intended for individuals 18 years
             of age or older.
           </p>
-
           <div class="verification-options">
             <button id="verify-yes" class="verify-button verify-yes">
               I am 18 or older
@@ -86,20 +85,20 @@
               I am under 18
             </button>
           </div>
-
           <p class="verification-disclaimer">
             By entering, you confirm that you are of legal age in your
             jurisdiction.
           </p>
         </div>
       </div>
+
+      <!-- NAVIGATION -->
       <nav class="navbar" aria-label="Main navigation">
         <img
           src="./src/logo-transparent.png"
           alt="ReddyExch Logo"
           class="logo"
         />
-        <!-- <i class="menu-button hidden fa-duotone fa-solid fa-bars"></i> -->
         <ul class="navlinks">
           <li><a class="navlink navlink-active" href="#about">About</a></li>
           <li><a class="navlink" href="#partners">Partners</a></li>
@@ -126,20 +125,14 @@
             <div class="hamburger-line bottom-line"></div>
           </div>
         </div>
-
-        <!-- Add this mobile navigation overlay -->
         <div class="mobile-nav-overlay">
           <div class="mobile-nav-content">
             <ul class="mobile-navlinks">
               <li><a href="#about" class="mobile-navlink">About</a></li>
               <li><a href="#partners" class="mobile-navlink">Partners</a></li>
-              <li>
-                <a href="#booklet" class="mobile-navlink">How It Works</a>
-              </li>
+              <li><a href="#booklet" class="mobile-navlink">How It Works</a></li>
               <li><a href="#celebs" class="mobile-navlink">Celebs</a></li>
-              <li>
-                <a href="#services" class="mobile-navlink">Why ReddyExch</a>
-              </li>
+              <li><a href="#services" class="mobile-navlink">Why ReddyExch</a></li>
               <li><a href="#scores" class="mobile-navlink">Scores</a></li>
               <li>
                 <a href="./pages/contact.html" class="mobile-navlink"
@@ -154,10 +147,14 @@
           </div>
         </div>
       </nav>
+
+      <!-- HERO SECTION -->
       <div class="hero">
         <button class="hero-btn">India's Top Exchange</button>
         <h1 class="hero-slogan">
-          <span class="hero-slogan-1">GET YOUR ONLINE ID WITH BIGGEST</span>
+          <span class="hero-slogan-1">
+            GET YOUR ONLINE ID WITH BIGGEST
+          </span>
           <span class="hero-slogan-2">EXCHANGE</span>
         </h1>
         <p class="hero-description">
@@ -175,9 +172,14 @@
       <img src="./src/cardsmall.png" alt="Cards Small" class="cards-small" />
       <img src="./src/cardbig.png" alt="Cards Big" class="cards-big" />
     </header>
+
+    <!-- MAIN CONTENT -->
     <main>
+      <!-- CTA Section -->
       <section class="cta" aria-label="Contact information">
-        <h2 class="cta-header"><span class="whatsapp">WhatsApp</span> us on</h2>
+        <h2 class="cta-header">
+          <span class="whatsapp">WhatsApp</span> us on
+        </h2>
         <div class="cta-numbers">
           <a
             href="http://wa.aisensy.com/+917450007079"
@@ -187,11 +189,12 @@
           >
         </div>
       </section>
+      <!-- About Section -->
       <section id="about" class="about" aria-label="About ReddyExch">
         <div class="gradient-background"></div>
         <div class="gradient-overlay"></div>
-
         <div class="moving-particles">
+          <!-- Multiple particle divs for animation -->
           <div class="particle"></div>
           <div class="particle"></div>
           <div class="particle"></div>
@@ -253,6 +256,8 @@
           </div>
         </div>
       </section>
+
+      <!-- Partners Section -->
       <section id="partners" class="partners" aria-label="Our Partners">
         <h2 class="partners-sub-title-1">
           Our <span class="partners-sub-title-2">Partners</span>
@@ -363,17 +368,17 @@
               </a>
             </div>
           </article>
-          <!-- Repeat to add partners -->
         </div>
         <a href="#" class="partners-btn">See More</a>
-        <img src="./src/cardsmall.png" class="partners-bg-img" />
+        <img src="./src/cardsmall.png" class="partners-bg-img" alt="Background" />
       </section>
+
+      <!-- How It Works Section -->
       <section class="hiw-section">
         <h2 class="hiw-heading">
           <span class="hiw-heading-1">How It</span>
           <span class="hiw-heading-2">Works</span>
         </h2>
-
         <div class="hiw-steps-container">
           <div class="hiw-step">
             <div class="hiw-step-label">Step</div>
@@ -382,7 +387,6 @@
             </div>
             <div class="hiw-step-text">Message us on our WhatsApp number</div>
           </div>
-
           <div class="hiw-arrow-container">
             <div class="hiw-arrows">
               <div class="hiw-arrow">&gt;</div>
@@ -392,7 +396,6 @@
               <div class="hiw-arrow">&gt;</div>
             </div>
           </div>
-
           <div class="hiw-step">
             <div class="hiw-step-label">Step</div>
             <div class="hiw-step-circle">
@@ -402,7 +405,6 @@
               Customer satisfaction guaranteed with all information
             </div>
           </div>
-
           <div class="hiw-arrow-container">
             <div class="hiw-arrows">
               <div class="hiw-arrow">&gt;</div>
@@ -412,17 +414,15 @@
               <div class="hiw-arrow">&gt;</div>
             </div>
           </div>
-
           <div class="hiw-step">
             <div class="hiw-step-label">Step</div>
             <div class="hiw-step-circle">
               <div class="hiw-step-number">3</div>
             </div>
             <div class="hiw-step-text">
-              Start depositing & withdrawal instantly
+              Start depositing &amp; withdrawal instantly
             </div>
           </div>
-
           <div class="hiw-arrow-container">
             <div class="hiw-arrows">
               <div class="hiw-arrow">&gt;</div>
@@ -432,7 +432,6 @@
               <div class="hiw-arrow">&gt;</div>
             </div>
           </div>
-
           <div class="hiw-step">
             <div class="hiw-step-label">Step</div>
             <div class="hiw-step-circle">
@@ -448,14 +447,9 @@
               Explore our comprehensive guide to learn more about sports betting
             </p>
           </div>
-
           <div class="booklet-viewer">
             <div class="booklet-controls">
-              <button
-                id="prev-page"
-                class="booklet-btn"
-                aria-label="Previous page"
-              >
+              <button id="prev-page" class="booklet-btn" aria-label="Previous page">
                 <i class="fas fa-chevron-left"></i>
               </button>
               <div class="page-indicator">
@@ -465,15 +459,14 @@
                 <i class="fas fa-chevron-right"></i>
               </button>
             </div>
-
             <div class="booklet-pages">
-              <!-- Page 1 -->
+              <!-- Booklet pages 1-5 -->
               <div class="booklet-page active" data-page="1">
                 <div class="page-content">
                   <h3 class="page-title">Getting Started</h3>
                   <div class="page-image">
                     <img
-                      src="./src/booklet-page1.png"
+                      src="./src/booklet/page-1.PNG"
                       alt="Getting Started Guide"
                       onerror="this.src='/api/placeholder/400/250';this.onerror='';"
                     />
@@ -490,14 +483,12 @@
                   </div>
                 </div>
               </div>
-
-              <!-- Page 2 -->
               <div class="booklet-page" data-page="2">
                 <div class="page-content">
                   <h3 class="page-title">Account Setup</h3>
                   <div class="page-image">
                     <img
-                      src="./src/booklet-page2.png"
+                      src="./src/booklet/page-2.PNG"
                       alt="Account Setup Guide"
                       onerror="this.src='/api/placeholder/400/250';this.onerror='';"
                     />
@@ -513,14 +504,12 @@
                   </div>
                 </div>
               </div>
-
-              <!-- Page 3 -->
               <div class="booklet-page" data-page="3">
                 <div class="page-content">
                   <h3 class="page-title">Placing Bets</h3>
                   <div class="page-image">
                     <img
-                      src="./src/booklet-page3.png"
+                      src="./src/booklet/page-3.PNG"
                       alt="Placing Bets Guide"
                       onerror="this.src='/api/placeholder/400/250';this.onerror='';"
                     />
@@ -541,14 +530,12 @@
                   </div>
                 </div>
               </div>
-
-              <!-- Page 4 -->
               <div class="booklet-page" data-page="4">
                 <div class="page-content">
-                  <h3 class="page-title">Deposits & Withdrawals</h3>
+                  <h3 class="page-title">Deposits &amp; Withdrawals</h3>
                   <div class="page-image">
                     <img
-                      src="./src/booklet-page4.png"
+                      src="./src/booklet/page-4.PNG"
                       alt="Payment Methods Guide"
                       onerror="this.src='/api/placeholder/400/250';this.onerror='';"
                     />
@@ -568,14 +555,166 @@
                   </div>
                 </div>
               </div>
-
-              <!-- Page 5 -->
               <div class="booklet-page" data-page="5">
                 <div class="page-content">
                   <h3 class="page-title">Responsible Gambling</h3>
                   <div class="page-image">
                     <img
-                      src="./src/booklet-page5.png"
+                      src="./src/booklet/page-5.PNG"
+                      alt="Responsible Gambling Guide"
+                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
+                    />
+                  </div>
+                  <div class="page-text">
+                    <p>At ReddyExch, we promote responsible gambling:</p>
+                    <ul>
+                      <li>Set personal limits for deposits and bets</li>
+                      <li>Take regular breaks from betting</li>
+                      <li>Never chase losses</li>
+                      <li>Bet for entertainment, not as a source of income</li>
+                      <li>Contact our support team if you need assistance</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="booklet-page" data-page="6">
+                <div class="page-content">
+                  <h3 class="page-title">Responsible Gambling</h3>
+                  <div class="page-image">
+                    <img
+                      src="./src/booklet/page-6.PNG"
+                      alt="Responsible Gambling Guide"
+                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
+                    />
+                  </div>
+                  <div class="page-text">
+                    <p>At ReddyExch, we promote responsible gambling:</p>
+                    <ul>
+                      <li>Set personal limits for deposits and bets</li>
+                      <li>Take regular breaks from betting</li>
+                      <li>Never chase losses</li>
+                      <li>Bet for entertainment, not as a source of income</li>
+                      <li>Contact our support team if you need assistance</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="booklet-page" data-page="7">
+                <div class="page-content">
+                  <h3 class="page-title">Responsible Gambling</h3>
+                  <div class="page-image">
+                    <img
+                      src="./src/booklet/page-7.PNG"
+                      alt="Responsible Gambling Guide"
+                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
+                    />
+                  </div>
+                  <div class="page-text">
+                    <p>At ReddyExch, we promote responsible gambling:</p>
+                    <ul>
+                      <li>Set personal limits for deposits and bets</li>
+                      <li>Take regular breaks from betting</li>
+                      <li>Never chase losses</li>
+                      <li>Bet for entertainment, not as a source of income</li>
+                      <li>Contact our support team if you need assistance</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="booklet-page" data-page="8">
+                <div class="page-content">
+                  <h3 class="page-title">Responsible Gambling</h3>
+                  <div class="page-image">
+                    <img
+                      src="./src/booklet/page-8.PNG"
+                      alt="Responsible Gambling Guide"
+                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
+                    />
+                  </div>
+                  <div class="page-text">
+                    <p>At ReddyExch, we promote responsible gambling:</p>
+                    <ul>
+                      <li>Set personal limits for deposits and bets</li>
+                      <li>Take regular breaks from betting</li>
+                      <li>Never chase losses</li>
+                      <li>Bet for entertainment, not as a source of income</li>
+                      <li>Contact our support team if you need assistance</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="booklet-page" data-page="9">
+                <div class="page-content">
+                  <h3 class="page-title">Responsible Gambling</h3>
+                  <div class="page-image">
+                    <img
+                      src="./src/booklet/page-9.PNG"
+                      alt="Responsible Gambling Guide"
+                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
+                    />
+                  </div>
+                  <div class="page-text">
+                    <p>At ReddyExch, we promote responsible gambling:</p>
+                    <ul>
+                      <li>Set personal limits for deposits and bets</li>
+                      <li>Take regular breaks from betting</li>
+                      <li>Never chase losses</li>
+                      <li>Bet for entertainment, not as a source of income</li>
+                      <li>Contact our support team if you need assistance</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="booklet-page" data-page="10">
+                <div class="page-content">
+                  <h3 class="page-title">Responsible Gambling</h3>
+                  <div class="page-image">
+                    <img
+                      src="./src/booklet/page-10.PNG"
+                      alt="Responsible Gambling Guide"
+                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
+                    />
+                  </div>
+                  <div class="page-text">
+                    <p>At ReddyExch, we promote responsible gambling:</p>
+                    <ul>
+                      <li>Set personal limits for deposits and bets</li>
+                      <li>Take regular breaks from betting</li>
+                      <li>Never chase losses</li>
+                      <li>Bet for entertainment, not as a source of income</li>
+                      <li>Contact our support team if you need assistance</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="booklet-page" data-page="11">
+                <div class="page-content">
+                  <h3 class="page-title">Responsible Gambling</h3>
+                  <div class="page-image">
+                    <img
+                      src="./src/booklet/page-11.PNG"
+                      alt="Responsible Gambling Guide"
+                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
+                    />
+                  </div>
+                  <div class="page-text">
+                    <p>At ReddyExch, we promote responsible gambling:</p>
+                    <ul>
+                      <li>Set personal limits for deposits and bets</li>
+                      <li>Take regular breaks from betting</li>
+                      <li>Never chase losses</li>
+                      <li>Bet for entertainment, not as a source of income</li>
+                      <li>Contact our support team if you need assistance</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="booklet-page" data-page="12">
+                <div class="page-content">
+                  <h3 class="page-title">Responsible Gambling</h3>
+                  <div class="page-image">
+                    <img
+                      src="./src/booklet/page-12.PNG"
                       alt="Responsible Gambling Guide"
                       onerror="this.src='/api/placeholder/400/250';this.onerror='';"
                     />
@@ -594,44 +733,30 @@
               </div>
             </div>
           </div>
-        </article>
-        <article class="hiw-cta">
-          <div class="hiw-cta-header-1">
-            ReddyExch is one of The Biggest Platform For Online Sports Betting
-            ID's
-          </div>
-          <div class="hiw-cta-header-2">
-            Get Your Betting Id Now. Contact Us On WhatsApp
-          </div>
-          <div class="hiw-cta-header-3">
-            For Any Queries, Emergencies, Feedbacks or Complaints. We Are Here
-            To Help You 24/7 With Our Online Services.
-          </div>
-          <div class="hiw-cta-action">
-            <div class="hiw-cta-action-header">WhatsApp us on</div>
-            <div class="hiw-cta-action-buttons">
-              <div class="hiw-cta-action-button">+91 7450007079</div>
-            </div>
-          </div>
-          <div class="booklet-cta">
-            <div class="cta-content">
-              <h3 class="cta-title">Ready to Start?</h3>
-              <p class="cta-description">
-                Get your betting ID now and join thousands of players on India's
-                top exchange
-              </p>
-              <a
-                href="http://wa.aisensy.com/+917450007079"
-                class="cta-button"
-                rel="noopener"
-              >
-                <i class="fab fa-whatsapp"></i> Contact Us on WhatsApp
-              </a>
-            </div>
+        </div>
+      </article>
+      <article class="hiw-cta">
+        <div class="hiw-cta-header-1">
+          ReddyExch is one of The Biggest Platform For Online Sports Betting ID's
+        </div>
+        <div class="hiw-cta-header-2">
+          Get Your Betting Id Now. Contact Us On WhatsApp
+        </div>
+        <div class="hiw-cta-header-3">
+          For Any Queries, Emergencies, Feedbacks or Complaints. We Are Here To
+          Help You 24/7 With Our Online Services.
+        </div>
+        <div class="hiw-cta-action">
+          <div class="hiw-cta-action-header">WhatsApp us on</div>
+          <div class="hiw-cta-action-buttons">
+            <div class="hiw-cta-action-button">+91 7450007079</div>
           </div>
         </div>
-        </article>
+        
+      </article>
       </section>
+
+      <!-- Services Section -->
       <section id="services" class="services" aria-label="Our Services">
         <div class="services-container">
           <h2 class="sub-title">Why <span>ReddyExch</span></h2>
@@ -645,107 +770,93 @@
               </p>
             </article>
             <article>
-              <i aria-hidden="true" class="fa-solid fa-headset"></i>
+              <i class="fa-solid fa-headset" aria-hidden="true"></i>
               <h2>24/7 SUPPORT</h2>
               <p>
-                We have a team of experts who available 24/7 to guide you
+                We have a team of experts who are available 24/7 to guide you
                 through our WhatsApp chats.
               </p>
             </article>
             <article>
-              <i aria-hidden="true" class="fa-solid fa-shield-halved"></i>
+              <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
               <h2>100% TRUSTED SERVICES</h2>
               <p>
-                Transparency and accuracy is the most important for us and for
-                our customer. We deal in the most transparent way.
+                Transparency and accuracy are the most important for us and our
+                customers. We operate in the most transparent way.
               </p>
             </article>
             <article>
-              <i aria-hidden="true" class="fa-solid fa-money-bill-transfer"></i>
-              <h2>INSTANT WITHDRAWAL & REFILL</h2>
+              <i class="fa-solid fa-money-bill-transfer" aria-hidden="true"></i>
+              <h2>INSTANT WITHDRAWAL &amp; REFILL</h2>
               <p>
-                ReddyExch provides instant service of id withdrawal & refilling
-                with min to max amount.
+                ReddyExch provides instant service of id withdrawal &amp; refilling
+                with a wide range of amounts.
               </p>
             </article>
             <article>
-              <i aria-hidden="true" class="fa-regular fa-credit-card"></i>
+              <i class="fa-regular fa-credit-card" aria-hidden="true"></i>
               <h2>AVAILABLE PAYMENT METHOD</h2>
               <p>
-                Multiple methods are available for Paymetns. Customer can pay
-                via Net Banking, Bank Transfer, Paytm, Google pay, IMPS, PhonePe
-                etc.
+                Multiple payment methods are available: Net Banking, Bank Transfer,
+                Paytm, Google Pay, IMPS, PhonePe, etc.
               </p>
             </article>
             <article>
-              <i aria-hidden="true" class="fa-brands fa-nfc-directional"></i>
+              <i class="fa-brands fa-nfc-directional" aria-hidden="true"></i>
               <h2>HIGH SECURITY</h2>
               <p>
-                Security is our Top priority and hence your data and imformation
-                is safe and is not shared at any Point.
+                Security is our top priority; your data is safe and is not shared
+                at any point.
               </p>
             </article>
-            <!-- Repeat for other services -->
           </div>
         </div>
       </section>
+
+      <!-- Offers Section -->
       <section id="offers">
         <div class="container">
           <h2>Our Offers</h2>
           <div class="offers-wrapper">
-            <!-- Withdraw Offers -->
             <article class="offer-category" id="withdraw-offers">
               <h3>Withdraw Offers</h3>
               <ul class="offer-list">
                 <li>
-                  <strong>Withdraw ₹10,000+</strong> → Get
-                  <strong>₹500 Bonus!</strong>
+                  <strong>Withdraw ₹10,000+</strong> → Get <strong>₹500 Bonus!</strong>
                 </li>
                 <li>
-                  <strong>Withdraw ₹50,000+</strong> → Get
-                  <strong>₹3,000 Cashback</strong> or
+                  <strong>Withdraw ₹50,000+</strong> → Get <strong>₹3,000 Cashback</strong> or
                   <strong>Apple AirPods!</strong>
                 </li>
                 <li>
-                  <strong>Withdraw ₹1,00,000+</strong> → Get
-                  <strong>₹10,000 Cashback</strong> or a
+                  <strong>Withdraw ₹1,00,000+</strong> → Get <strong>₹10,000 Cashback</strong> or a
                   <strong>Smartwatch!</strong>
                 </li>
               </ul>
             </article>
-
-            <!-- Referral Offers -->
             <article class="offer-category" id="referral-offers">
               <h3>Referral Offers</h3>
               <ul class="offer-list">
                 <li>
-                  <strong>Refer 1 friend</strong> → Get
-                  <strong>₹500 instantly</strong>
+                  <strong>Refer 1 friend</strong> → Get <strong>₹500 instantly</strong>
                 </li>
                 <li>
-                  <strong>Refer 5 friends</strong> → Get
-                  <strong>₹3,000 Bonus</strong>
+                  <strong>Refer 5 friends</strong> → Get <strong>₹3,000 Bonus</strong>
                 </li>
                 <li>
-                  <strong>Refer 10 friends</strong> → Get
-                  <strong>₹10,000 Bonus + VIP Access</strong>
+                  <strong>Refer 10 friends</strong> → Get <strong>₹10,000 Bonus + VIP Access</strong>
                 </li>
                 <li>
                   <strong>Refer 50 friends</strong> → Become an
-                  <strong
-                    >Affiliate Partner &amp; Earn ₹50,000+ Monthly!</strong
-                  >
+                  <strong>Affiliate Partner &amp; Earn ₹50,000+ Monthly!</strong>
                 </li>
               </ul>
             </article>
-
-            <!-- Jackpot Offers -->
             <article class="offer-category" id="jackpot-offers">
               <h3>Jackpot Offers</h3>
               <ul class="offer-list">
                 <li>
-                  <strong>Withdraw ₹5,000+</strong> &amp; Enter the Weekly
-                  Jackpot Draw!
+                  <strong>Withdraw ₹5,000+</strong> &amp; Enter the Weekly Jackpot Draw!
                 </li>
               </ul>
               <h4>Prizes Include:</h4>
@@ -758,12 +869,28 @@
             </article>
           </div>
         </div>
+        <div class="booklet-cta">
+          <div class="cta-content">
+            <h3 class="cta-title">Ready to Start?</h3>
+            <p class="cta-description">
+              Get your betting ID now and join thousands of players on India's
+              top exchange
+            </p>
+            <a
+              href="http://wa.aisensy.com/+917450007079"
+              class="cta-button"
+              rel="noopener"
+            >
+              <i class="fab fa-whatsapp"></i> Contact Us on WhatsApp
+            </a>
+          </div>
+        </div>
       </section>
 
+      <!-- Cricket Score Widget -->
       <section id="cricket-score-widget" class="widget-section">
         <h2 class="widget-title">Live Cricket Scores</h2>
         <div id="score-frame">
-          <!-- Fallback for users with JavaScript disabled -->
           <noscript>
             <a rel="nofollow" href="https://www.crictimes.org/cricket-scores">
               View Live Cricket Scores
@@ -780,6 +907,8 @@
           })();
         </script>
       </section>
+
+      <!-- Instagram Feed -->
       <section id="instagram-feed" class="instagram-feed">
         <div class="instagram-header">
           <div class="instagram-profile">
@@ -801,7 +930,6 @@
             <a href="#" class="follow-button">Follow</a>
           </div>
         </div>
-
         <div class="instagram-gallery">
           <div class="gallery-grid">
             <div class="gallery-item">
@@ -809,9 +937,7 @@
               <div class="gallery-overlay">
                 <div class="overlay-content">
                   <span class="likes">245 <i class="fas fa-heart"></i></span>
-                  <span class="comments"
-                    >34 <i class="fas fa-comment"></i
-                  ></span>
+                  <span class="comments">34 <i class="fas fa-comment"></i></span>
                 </div>
               </div>
             </div>
@@ -820,9 +946,7 @@
               <div class="gallery-overlay">
                 <div class="overlay-content">
                   <span class="likes">328 <i class="fas fa-heart"></i></span>
-                  <span class="comments"
-                    >52 <i class="fas fa-comment"></i
-                  ></span>
+                  <span class="comments">52 <i class="fas fa-comment"></i></span>
                 </div>
               </div>
             </div>
@@ -831,9 +955,7 @@
               <div class="gallery-overlay">
                 <div class="overlay-content">
                   <span class="likes">412 <i class="fas fa-heart"></i></span>
-                  <span class="comments"
-                    >67 <i class="fas fa-comment"></i
-                  ></span>
+                  <span class="comments">67 <i class="fas fa-comment"></i></span>
                 </div>
               </div>
             </div>
@@ -842,9 +964,7 @@
               <div class="gallery-overlay">
                 <div class="overlay-content">
                   <span class="likes">276 <i class="fas fa-heart"></i></span>
-                  <span class="comments"
-                    >41 <i class="fas fa-comment"></i
-                  ></span>
+                  <span class="comments">41 <i class="fas fa-comment"></i></span>
                 </div>
               </div>
             </div>
@@ -853,9 +973,7 @@
               <div class="gallery-overlay">
                 <div class="overlay-content">
                   <span class="likes">389 <i class="fas fa-heart"></i></span>
-                  <span class="comments"
-                    >59 <i class="fas fa-comment"></i
-                  ></span>
+                  <span class="comments">59 <i class="fas fa-comment"></i></span>
                 </div>
               </div>
             </div>
@@ -864,9 +982,7 @@
               <div class="gallery-overlay">
                 <div class="overlay-content">
                   <span class="likes">534 <i class="fas fa-heart"></i></span>
-                  <span class="comments"
-                    >82 <i class="fas fa-comment"></i
-                  ></span>
+                  <span class="comments">82 <i class="fas fa-comment"></i></span>
                 </div>
               </div>
             </div>
@@ -874,6 +990,8 @@
         </div>
       </section>
     </main>
+
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="waves">
         <div class="wave" id="wave1"></div>
@@ -881,7 +999,6 @@
         <div class="wave" id="wave3"></div>
         <div class="wave" id="wave4"></div>
       </div>
-
       <div class="container-col">
         <div class="row">
           <div class="footer-col">
@@ -890,10 +1007,9 @@
               <li><a href="#about">About Us</a></li>
               <li><a href="#partners">Our Partners</a></li>
               <li><a href="/privacy">Privacy Policy</a></li>
-              <li><a href="/terms">Terms & Conditions</a></li>
+              <li><a href="/terms">Terms &amp; Conditions</a></li>
             </ul>
           </div>
-
           <div class="footer-col">
             <h4>Connect With Us</h4>
             <div class="social-links">
@@ -912,11 +1028,32 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="bottom-bar">
-        <p>&copy; 2025 ReddyExch, All Rights Reserved</p>
+        <div class="bottom-bar">
+          © 2025 ReddyExch. All rights reserved.
+        </div>
       </div>
     </footer>
+
+    <!-- BACKGROUND AUDIO ELEMENT -->
+    <audio id="background-audio" src="path/to/your-audio-file.mp3" autoplay loop></audio>
+
+    <!-- INLINE SCRIPT FOR AUDIO TOGGLE FUNCTIONALITY -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const audioToggle = document.querySelector(".audio-toggle");
+        const audioElement = document.getElementById("background-audio");
+        
+        audioToggle.addEventListener("click", function () {
+          audioElement.muted = !audioElement.muted;
+          if (audioElement.muted) {
+            audioToggle.classList.add("active");
+            audioToggle.innerHTML = '<i class="fas fa-volume-mute"></i>';
+          } else {
+            audioToggle.classList.remove("active");
+            audioToggle.innerHTML = '<i class="fas fa-volume-up"></i>';
+          }
+        });
+      });
+    </script>
   </body>
 </html>

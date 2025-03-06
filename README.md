@@ -26,5 +26,6 @@ ReddyExch/
 ├── js/
 │   └── script.js
 ├── src/
+├── ReddyExch-Info.docx
 └── README.md
 ```

@@ -1033,6 +1033,8 @@
 
 .booklet-page {
   display: none;
+  background: var(--color-grey-darkest);
+  backdrop-filter: blur(10px);
 }
 
 .booklet-page.active {

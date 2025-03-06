@@ -325,6 +325,15 @@
   transform: scale(1.1);
 }
 
+.navbar-button:active {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  box-shadow: 0 0 8px var(--color-accent);
+}
+.audio-toggle.active::before {
+  content: "\f026"; /* e.g., a muted volume icon from Font Awesome */
+}
+
 /* ----------hamburger----------- */
 .hamburger-menu {
   display: none;
