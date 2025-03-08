@@ -59,6 +59,7 @@
 
     <!-- Defer external script -->
     <script src="./js/script.js" defer></script>
+    <script src="./js/players.js" defer></script>
   </head>
   <body>
     <!-- HEADER & AGE VERIFICATION -->
@@ -171,6 +172,7 @@
       </div>
       <img src="./src/cardsmall.png" alt="Cards Small" class="cards-small" />
       <img src="./src/cardbig.png" alt="Cards Big" class="cards-big" />
+    </div>
     </header>
 
     <!-- MAIN CONTENT -->
@@ -440,320 +442,62 @@
             <div class="hiw-step-text">Earn from your skills</div>
           </div>
         </div>
-        <article class="interactive-booklet">
-          <div class="booklet-header">
-            <h3 class="booklet-title">Detailed Guide</h3>
-            <p class="booklet-subtitle">
-              Explore our comprehensive guide to learn more about sports betting
-            </p>
-          </div>
-          <div class="booklet-viewer">
-            <div class="booklet-controls">
-              <button id="prev-page" class="booklet-btn" aria-label="Previous page">
-                <i class="fas fa-chevron-left"></i>
-              </button>
-              <div class="page-indicator">
-                <span id="current-page">1</span>/<span id="total-pages">5</span>
-              </div>
-              <button id="next-page" class="booklet-btn" aria-label="Next page">
-                <i class="fas fa-chevron-right"></i>
-              </button>
-            </div>
-            <div class="booklet-pages">
-              <!-- Booklet pages 1-5 -->
-              <div class="booklet-page active" data-page="1">
-                <div class="page-content">
-                  <h3 class="page-title">Getting Started</h3>
-                  <div class="page-image">
-                    <img
-                      src="./src/booklet/page-1.PNG"
-                      alt="Getting Started Guide"
-                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
-                    />
-                  </div>
-                  <div class="page-text">
-                    <p>
-                      Welcome to ReddyExch! This guide will help you understand
-                      the basics of sports betting with our platform.
-                    </p>
-                    <p>
-                      Our platform offers a wide range of sports events to bet
-                      on, competitive odds, and secure transactions.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="booklet-page" data-page="2">
-                <div class="page-content">
-                  <h3 class="page-title">Account Setup</h3>
-                  <div class="page-image">
-                    <img
-                      src="./src/booklet/page-2.PNG"
-                      alt="Account Setup Guide"
-                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
-                    />
-                  </div>
-                  <div class="page-text">
-                    <p>Setting up your account is easy and secure:</p>
-                    <ul>
-                      <li>Contact us via WhatsApp at +91 7450007079</li>
-                      <li>Verify your identity with basic information</li>
-                      <li>Get your unique betting ID immediately</li>
-                      <li>Set up your preferred payment methods</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="booklet-page" data-page="3">
-                <div class="page-content">
-                  <h3 class="page-title">Placing Bets</h3>
-                  <div class="page-image">
-                    <img
-                      src="./src/booklet/page-3.PNG"
-                      alt="Placing Bets Guide"
-                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
-                    />
-                  </div>
-                  <div class="page-text">
-                    <p>Learn how to place bets efficiently:</p>
-                    <ol>
-                      <li>Log in to your account</li>
-                      <li>Browse available events</li>
-                      <li>Select your preferred market</li>
-                      <li>Enter your stake amount</li>
-                      <li>Confirm your bet</li>
-                    </ol>
-                    <p>
-                      Our platform offers various betting options including
-                      match winner, over/under, handicaps, and more.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="booklet-page" data-page="4">
-                <div class="page-content">
-                  <h3 class="page-title">Deposits &amp; Withdrawals</h3>
-                  <div class="page-image">
-                    <img
-                      src="./src/booklet/page-4.PNG"
-                      alt="Payment Methods Guide"
-                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
-                    />
-                  </div>
-                  <div class="page-text">
-                    <p>We support multiple payment methods:</p>
-                    <ul>
-                      <li>Bank Transfer</li>
-                      <li>Net Banking</li>
-                      <li>UPI (Google Pay, PhonePe, Paytm)</li>
-                      <li>IMPS</li>
-                    </ul>
-                    <p>
-                      Enjoy instant deposits and 24/7 withdrawals with minimal
-                      processing time.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="booklet-page" data-page="5">
-                <div class="page-content">
-                  <h3 class="page-title">Responsible Gambling</h3>
-                  <div class="page-image">
-                    <img
-                      src="./src/booklet/page-5.PNG"
-                      alt="Responsible Gambling Guide"
-                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
-                    />
-                  </div>
-                  <div class="page-text">
-                    <p>At ReddyExch, we promote responsible gambling:</p>
-                    <ul>
-                      <li>Set personal limits for deposits and bets</li>
-                      <li>Take regular breaks from betting</li>
-                      <li>Never chase losses</li>
-                      <li>Bet for entertainment, not as a source of income</li>
-                      <li>Contact our support team if you need assistance</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="booklet-page" data-page="6">
-                <div class="page-content">
-                  <h3 class="page-title">Responsible Gambling</h3>
-                  <div class="page-image">
-                    <img
-                      src="./src/booklet/page-6.PNG"
-                      alt="Responsible Gambling Guide"
-                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
-                    />
-                  </div>
-                  <div class="page-text">
-                    <p>At ReddyExch, we promote responsible gambling:</p>
-                    <ul>
-                      <li>Set personal limits for deposits and bets</li>
-                      <li>Take regular breaks from betting</li>
-                      <li>Never chase losses</li>
-                      <li>Bet for entertainment, not as a source of income</li>
-                      <li>Contact our support team if you need assistance</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="booklet-page" data-page="7">
-                <div class="page-content">
-                  <h3 class="page-title">Responsible Gambling</h3>
-                  <div class="page-image">
-                    <img
-                      src="./src/booklet/page-7.PNG"
-                      alt="Responsible Gambling Guide"
-                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
-                    />
-                  </div>
-                  <div class="page-text">
-                    <p>At ReddyExch, we promote responsible gambling:</p>
-                    <ul>
-                      <li>Set personal limits for deposits and bets</li>
-                      <li>Take regular breaks from betting</li>
-                      <li>Never chase losses</li>
-                      <li>Bet for entertainment, not as a source of income</li>
-                      <li>Contact our support team if you need assistance</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="booklet-page" data-page="8">
-                <div class="page-content">
-                  <h3 class="page-title">Responsible Gambling</h3>
-                  <div class="page-image">
-                    <img
-                      src="./src/booklet/page-8.PNG"
-                      alt="Responsible Gambling Guide"
-                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
-                    />
-                  </div>
-                  <div class="page-text">
-                    <p>At ReddyExch, we promote responsible gambling:</p>
-                    <ul>
-                      <li>Set personal limits for deposits and bets</li>
-                      <li>Take regular breaks from betting</li>
-                      <li>Never chase losses</li>
-                      <li>Bet for entertainment, not as a source of income</li>
-                      <li>Contact our support team if you need assistance</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="booklet-page" data-page="9">
-                <div class="page-content">
-                  <h3 class="page-title">Responsible Gambling</h3>
-                  <div class="page-image">
-                    <img
-                      src="./src/booklet/page-9.PNG"
-                      alt="Responsible Gambling Guide"
-                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
-                    />
-                  </div>
-                  <div class="page-text">
-                    <p>At ReddyExch, we promote responsible gambling:</p>
-                    <ul>
-                      <li>Set personal limits for deposits and bets</li>
-                      <li>Take regular breaks from betting</li>
-                      <li>Never chase losses</li>
-                      <li>Bet for entertainment, not as a source of income</li>
-                      <li>Contact our support team if you need assistance</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="booklet-page" data-page="10">
-                <div class="page-content">
-                  <h3 class="page-title">Responsible Gambling</h3>
-                  <div class="page-image">
-                    <img
-                      src="./src/booklet/page-10.PNG"
-                      alt="Responsible Gambling Guide"
-                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
-                    />
-                  </div>
-                  <div class="page-text">
-                    <p>At ReddyExch, we promote responsible gambling:</p>
-                    <ul>
-                      <li>Set personal limits for deposits and bets</li>
-                      <li>Take regular breaks from betting</li>
-                      <li>Never chase losses</li>
-                      <li>Bet for entertainment, not as a source of income</li>
-                      <li>Contact our support team if you need assistance</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="booklet-page" data-page="11">
-                <div class="page-content">
-                  <h3 class="page-title">Responsible Gambling</h3>
-                  <div class="page-image">
-                    <img
-                      src="./src/booklet/page-11.PNG"
-                      alt="Responsible Gambling Guide"
-                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
-                    />
-                  </div>
-                  <div class="page-text">
-                    <p>At ReddyExch, we promote responsible gambling:</p>
-                    <ul>
-                      <li>Set personal limits for deposits and bets</li>
-                      <li>Take regular breaks from betting</li>
-                      <li>Never chase losses</li>
-                      <li>Bet for entertainment, not as a source of income</li>
-                      <li>Contact our support team if you need assistance</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="booklet-page" data-page="12">
-                <div class="page-content">
-                  <h3 class="page-title">Responsible Gambling</h3>
-                  <div class="page-image">
-                    <img
-                      src="./src/booklet/page-12.PNG"
-                      alt="Responsible Gambling Guide"
-                      onerror="this.src='/api/placeholder/400/250';this.onerror='';"
-                    />
-                  </div>
-                  <div class="page-text">
-                    <p>At ReddyExch, we promote responsible gambling:</p>
-                    <ul>
-                      <li>Set personal limits for deposits and bets</li>
-                      <li>Take regular breaks from betting</li>
-                      <li>Never chase losses</li>
-                      <li>Bet for entertainment, not as a source of income</li>
-                      <li>Contact our support team if you need assistance</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-      <article class="hiw-cta">
-        <div class="hiw-cta-header-1">
-          ReddyExch is one of The Biggest Platform For Online Sports Betting ID's
-        </div>
-        <div class="hiw-cta-header-2">
-          Get Your Betting Id Now. Contact Us On WhatsApp
-        </div>
-        <div class="hiw-cta-header-3">
-          For Any Queries, Emergencies, Feedbacks or Complaints. We Are Here To
-          Help You 24/7 With Our Online Services.
-        </div>
-        <div class="hiw-cta-action">
-          <div class="hiw-cta-action-header">WhatsApp us on</div>
-          <div class="hiw-cta-action-buttons">
-            <div class="hiw-cta-action-button">+91 7450007079</div>
-          </div>
-        </div>
         
       </article>
+      <article class="booklet-cta">
+        <div class="cta-content">
+          <h3 class="cta-title">Ready to Start?</h3>
+          <p class="cta-description">
+            Get your betting ID now and join thousands of players on India's
+            top exchange
+          </p>
+          <a
+            href="http://wa.aisensy.com/+917450007079"
+            class="cta-button"
+            rel="noopener"
+          >
+            <i class="fab fa-whatsapp"></i> Contact Us on WhatsApp
+          </a>
+        </div>
+      </article>
+      </section>
+
+      <!-- Booklet Section -->
+      <section class="booklet-section">
+        <div class="interactive-booklet">
+          <div class="booklet-container">
+            <div class="booklet-pages">
+              <!-- Pages will be dynamically generated via JS -->
+            </div>
+            
+            <div class="page-turn-effect left"></div>
+            <div class="page-turn-effect right"></div>
+            
+            <div class="booklet-controls">
+              <button class="booklet-nav-btn prev-btn" aria-label="Previous page">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+              
+              <div class="page-indicator">
+                <span class="current-page">1</span>
+                <span class="separator">/</span>
+                <span class="total-pages">12</span>
+              </div>
+              
+              <button class="booklet-nav-btn next-btn" aria-label="Next page">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+            
+            <div class="booklet-progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Services Section -->
@@ -869,20 +613,153 @@
             </article>
           </div>
         </div>
-        <div class="booklet-cta">
-          <div class="cta-content">
-            <h3 class="cta-title">Ready to Start?</h3>
-            <p class="cta-description">
-              Get your betting ID now and join thousands of players on India's
-              top exchange
-            </p>
-            <a
-              href="http://wa.aisensy.com/+917450007079"
-              class="cta-button"
-              rel="noopener"
-            >
-              <i class="fab fa-whatsapp"></i> Contact Us on WhatsApp
-            </a>
+        <article class="hiw-cta">
+          <div class="hiw-cta-header-1">
+            ReddyExch is one of The Biggest Platform For Online Sports Betting ID's
+          </div>
+          <div class="hiw-cta-header-2">
+            Get Your Betting Id Now. Contact Us On WhatsApp
+          </div>
+          <div class="hiw-cta-header-3">
+            For Any Queries, Emergencies, Feedbacks or Complaints. We Are Here To
+            Help You 24/7 With Our Online Services.
+          </div>
+          <div class="hiw-cta-action">
+            <div class="hiw-cta-action-header">WhatsApp us on</div>
+            <div class="hiw-cta-action-buttons">
+              <div class="hiw-cta-action-button">+91 7450007079</div>
+            </div>
+          </div>
+          
+        </article>
+      </section>
+      <!-- Celebrity Carousel Section -->
+      <section class="video-carousel">
+        <!-- Background effects -->
+        <div class="gradient-background"></div>
+        <div class="gradient-overlay"></div>
+        <div class="moving-particles">
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+        </div>
+      
+        <!-- Content container -->
+        <div class="carousel-container">
+          <!-- Left column - Heading and description -->
+          <div class="carousel-col-1">
+            <h3 class="carousel-title">FEATURED <span class="carousel-title-brand">CELEBRITIES</span></h3>
+            <h2 class="carousel-sub-title-1">Watch exclusive celebrity videos</h2>
+            <p class="carousel-sub-title-2">Explore our collection of exclusive interviews, behind-the-scenes footage, and special moments with your favorite celebrities. These handpicked videos showcase the best of our celebrity partnerships.</p>
+            
+            <!-- Navigation controls -->
+            <div class="carousel-controls">
+              <button class="carousel-button prev-button" aria-label="Previous video">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <div class="carousel-dots">
+                <!-- Dots will be added dynamically with JavaScript -->
+              </div>
+              <button class="carousel-button next-button" aria-label="Next video">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+      
+          <!-- Right column - Carousel -->
+          <div class="carousel-col-2">
+            <div class="carousel-track-container">
+              <div class="carousel-track">
+                <!-- Video Items -->
+                <div class="carousel-item active">
+                  <div class="video-wrapper">
+                    <div class="video-thumbnail">
+                      <img src="/api/placeholder/640/360" alt="Celebrity video thumbnail" class="thumbnail-img">
+                      <div class="play-button">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="12" cy="12" r="11" stroke="white" stroke-width="2"/>
+                          <path d="M9.5 7.5L16 12L9.5 16.5V7.5Z" fill="white"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="video-info">
+                      <h4 class="video-title">Exclusive Interview with Star Player</h4>
+                      <p class="video-description">Behind the scenes with our championship-winning athlete discussing career highlights</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="video-wrapper">
+                    <div class="video-thumbnail">
+                      <img src="/api/placeholder/640/360" alt="Celebrity video thumbnail" class="thumbnail-img">
+                      <div class="play-button">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="12" cy="12" r="11" stroke="white" stroke-width="2"/>
+                          <path d="M9.5 7.5L16 12L9.5 16.5V7.5Z" fill="white"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="video-info">
+                      <h4 class="video-title">Training Day with Champions</h4>
+                      <p class="video-description">Watch our elite athletes prepare for the upcoming season with intensive training</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="video-wrapper">
+                    <div class="video-thumbnail">
+                      <img src="/api/placeholder/640/360" alt="Celebrity video thumbnail" class="thumbnail-img">
+                      <div class="play-button">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="12" cy="12" r="11" stroke="white" stroke-width="2"/>
+                          <path d="M9.5 7.5L16 12L9.5 16.5V7.5Z" fill="white"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="video-info">
+                      <h4 class="video-title">Legendary Moments in History</h4>
+                      <p class="video-description">Relive the greatest sporting achievements from our hall of fame athletes</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="video-wrapper">
+                    <div class="video-thumbnail">
+                      <img src="/api/placeholder/640/360" alt="Celebrity video thumbnail" class="thumbnail-img">
+                      <div class="play-button">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="12" cy="12" r="11" stroke="white" stroke-width="2"/>
+                          <path d="M9.5 7.5L16 12L9.5 16.5V7.5Z" fill="white"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="video-info">
+                      <h4 class="video-title">Celebrity Charity Event</h4>
+                      <p class="video-description">See how our stars are making a difference in communities around the world</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
