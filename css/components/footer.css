@@ -28,24 +28,24 @@
 }
 
 #wave1 {
-  animation: wave 7s linear infinite;
+  animation: wave 12s linear infinite;
   transform: rotate(180deg);
 }
 
 #wave2 {
-  animation: wave 9s linear infinite reverse;
+  animation: wave 14s linear infinite reverse;
   opacity: 0.3;
   top: -10px;
 }
 
 #wave3 {
-  animation: wave 5s linear infinite;
+  animation: wave 10s linear infinite;
   opacity: 0.2;
   top: -20px;
 }
 
 #wave4 {
-  animation: wave 11s linear infinite reverse;
+  animation: wave 16s linear infinite reverse;
   opacity: 0.1;
   top: -30px;
 }

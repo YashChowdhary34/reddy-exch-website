@@ -54,12 +54,6 @@ function ageVerification() {
   }
 }
 
-/* ----------navlink active functionality---------- */
-function acitveNavbarOnScroll() {
-  const activeSection = document.querySelectorAll("");
-  const navlinks = document.querySelectorAll(".");
-}
-
 // Set animation order for info groups
 document.addEventListener("DOMContentLoaded", function () {
   // Set default to dark theme
@@ -278,10 +272,17 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+function navbarActiveFeature() {
+  document.querySelector(".navlink").addEventListener("click", () => {
+    document.querySelector(".navlink").classList.add("navlink-active");
+  });
+}
+
 /* calling functions after dom loading */
 
 document.addEventListener("DOMContentLoaded", function () {
   ageVerification();
+  navbarActiveFeature();
 });
 
 document.addEventListener("DOMContentLoaded", function () {

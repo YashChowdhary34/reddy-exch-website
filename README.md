@@ -26,6 +26,13 @@ ReddyExch/
 ├── js/
 │   └── script.js
 ├── src/
+│   ├── ...
+│   ├── booklet
+│   ├── instagram-posts/
+│   └── img/
+│       ├── background/
+│       ├── hero-players/
+│       └── partners/
 ├── ReddyExch-Info.docx
 └── README.md
 ```
