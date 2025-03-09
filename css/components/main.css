@@ -904,7 +904,6 @@
   color: var(--color-white);
   position: relative;
   display: inline-block;
-  whit
 }
 
 .hiw-cta-header-3 {
@@ -1002,7 +1001,7 @@
   min-width: 100%;
   max-height: 80vh;
   padding: var(--space-md) var(--space-5xl);
-  background-color: var(--color-grey-black);
+  background-color: var(--color-grey-darkest);
 }
 
 /* Interactive Booklet Styling */
@@ -1996,7 +1995,7 @@
   padding-top: var(--space-xl);
   overflow: hidden;
   position: relative;
-  background-color: var(--color-white);
+  background-color: var(--color-black);
 }
 
 .insta-container {
@@ -2014,7 +2013,7 @@
   font-family: var(--header-font);
   font-size: var(--text-4xl);
   margin-bottom: var(--space-sm);
-  color: var(--color-black);
+  color: var(--color-white);
   letter-spacing: 3px;
 }
 
@@ -2141,7 +2140,7 @@
 }
 
 .insta-button:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
@@ -2181,7 +2180,7 @@
     max-width: 400px;
     margin: 0 auto;
   }
-  
+
   .insta-section {
     padding: var(--space-xl) 0;
   }
@@ -2282,8 +2281,11 @@
 
   .hiw-cta-header-2 {
     font-size: var(--text-lg);
-    width: 90%;
-    text-align: center;
+    width: 100%;
+  }
+
+  .hiw-cta-header-3 {
+    width: 100%;
   }
   .hiw-cta-header-2::after {
     display: none;

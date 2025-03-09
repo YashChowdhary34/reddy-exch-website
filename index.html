@@ -1,186 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Primary Meta Tags -->
-    <title>ReddyExch - India's Leading Sports Gaming Exchange | 24/7 Support</title>
-    <meta name="description" 
-          content="ReddyExch - India's Top Exchange for Online Sports gaming IDs. 24/7 withdrawal facility, global liquidity, and best industry pricing. Get your demo ID now!">
-    <meta name="keywords" 
-          content="ReddyExch, sports gaming, online gaming, cricket gaming, gaming exchange, India gaming, betting ID, instant withdrawal">
-    <meta name="author" content="ReddyExch">
-    
+  <head>
+    <!-- Basic Page Needs -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <title>
+      ReddyExch - India's Leading Sports Gaming Exchange | 24/7 Support
+    </title>
+    <meta
+      name="description"
+      content="ReddyExch - India's Top Exchange for Online Sports gaming IDs. 24/7 withdrawal facility, global liquidity, and best industry pricing. Get your demo ID now!"
+    />
+    <meta
+      name="keywords"
+      content="ReddyExch, sports gaming, online gaming, cricket gaming, gaming exchange, India gaming, betting ID, instant withdrawal"
+    />
+    <meta name="author" content="ReddyExch" />
+    <link rel="canonical" href="https://reddyexch.com/" />
+
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://reddyexch.com/">
-    <meta property="og:title" content="ReddyExch - India's Top Sports Gaming Exchange">
-    <meta property="og:description" 
-          content="Get your online sports betting ID with India's biggest exchange. 24/7 support and instant withdrawals.">
-    <meta property="og:image" content="https://reddyexch.com/src/logo-transparent.png">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://reddyexch.com/" />
+    <meta
+      property="og:title"
+      content="ReddyExch - India's Top Sports Gaming Exchange"
+    />
+    <meta
+      property="og:description"
+      content="Get your online sports betting ID with India's biggest exchange. 24/7 support and instant withdrawals."
+    />
+    <meta
+      property="og:image"
+      content="https://reddyexch.com/src/logo-transparent.png"
+    />
 
-    <!-- Preload Critical Resources -->
-    <link rel="preload" href="./css/base/reset.css" as="style">
-    <link rel="preload" href="./css/base/variables.css" as="style">
-    <link rel="preload" href="./css/styles.css" as="style">
-    
-    <!-- Preconnect to External Domains -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+    <!-- Preload & Preconnect for Performance -->
+    <link rel="preload" href="./css/base/reset.css" as="style" />
+    <link rel="preload" href="./css/base/variables.css" as="style" />
+    <link rel="preload" href="./css/styles.css" as="style" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <!-- Fonts -->
-    <link rel="stylesheet" 
-          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" 
-          media="print" 
-          onload="this.media='all'">
-    
-    <!-- Local Styles -->
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" 
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
-          crossorigin="anonymous" 
-          referrerpolicy="no-referrer">
-    
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./src/apple-touch-icon.png">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://reddyexch.com/">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
 
-    <!-- Scripts -->
+    <!-- Local & External Styles -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/favicon-32x32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./src/apple-touch-icon.png"
+    />
+
+    <!-- JavaScript (deferred for better performance) -->
     <script src="./js/script.js" defer></script>
-    <script src="./js/players.js" defer></script>
-</head>
-<body>
-    <!-- Age Verification Modal -->
+  </head>
+  <body>
+    <!-- ================= Age Verification Modal ================= -->
     <div id="age-verification" class="age-verification">
-        <div class="age-verification-content">
-            <div class="age-verification-logo-container">
-                <img src="./src/logo-transparent.png" 
-                     alt="ReddyExch Logo" 
-                     class="verification-logo"
-                     width="180" 
-                     height="60">
-            </div>
-            <h2 class="verification-title">Age Verification</h2>
-            <p class="verification-message">
-                Welcome to ReddyExch! This site is intended for individuals 18 years of age or older.
-            </p>
-            <div class="verification-options">
-                <button id="verify-yes" class="verify-button verify-yes">
-                    I am 18 or older
-                </button>
-                <button id="verify-no" class="verify-button verify-no">
-                    I am under 18
-                </button>
-            </div>
-            <p class="verification-disclaimer">
-                By entering, you confirm that you are of legal age in your jurisdiction.
-            </p>
+      <div class="age-verification-content">
+        <div class="age-verification-logo-container">
+          <img
+            src="./src/logo-transparent.png"
+            alt="ReddyExch Logo"
+            class="verification-logo"
+            width="180"
+            height="60"
+          />
         </div>
+        <h2 class="verification-title">Age Verification</h2>
+        <p class="verification-message">
+          Welcome to ReddyExch! This site is intended for individuals 18 years
+          of age or older.
+        </p>
+        <div class="verification-options">
+          <button id="verify-yes" class="verify-button verify-yes">
+            I am 18 or older
+          </button>
+          <button id="verify-no" class="verify-button verify-no">
+            I am under 18
+          </button>
+        </div>
+        <p class="verification-disclaimer">
+          By entering, you confirm that you are of legal age in your
+          jurisdiction.
+        </p>
+      </div>
     </div>
 
-    <!-- Main Header -->
+    <!-- ================= Main Header & Navigation ================= -->
     <header id="header" class="header">
-        <nav class="navbar" aria-label="Main navigation">
-            <img src="./src/logo-transparent.png" 
-                 alt="ReddyExch Logo" 
-                 class="logo"
-                 width="120" 
-                 height="40">
-            
-            <!-- Desktop Navigation -->
-            <ul class="navlinks">
-                <li><a class="navlink" href="#about">About</a></li>
-                <li><a class="navlink" href="#partners">Partners</a></li>
-                <li><a class="navlink" href="#hiw">How It Works</a></li>
-                <li><a class="navlink" href="#services">Why ReddyExch</a></li>
-                <li><a class="navlink" href="#offers">Offers</a></li>
-                <li><a class="navlink" href="#cricket-score-widget">Scores</a></li>
-                <li><a class="navlink" href="#footer">Contact Us</a></li>
+      <nav class="navbar" aria-label="Main navigation">
+        <!-- Logo -->
+        <img
+          src="./src/logo-transparent.png"
+          alt="ReddyExch Logo"
+          class="logo"
+          width="120"
+          height="40"
+        />
+
+        <!-- Desktop Navigation Links -->
+        <ul class="navlinks">
+          <li><a class="navlink" href="#about">About</a></li>
+          <li><a class="navlink" href="#partners">Partners</a></li>
+          <li><a class="navlink" href="#hiw">How It Works</a></li>
+          <li><a class="navlink" href="#services">Why ReddyExch</a></li>
+          <li><a class="navlink" href="#offers">Offers</a></li>
+          <li><a class="navlink" href="#cricket-score-widget">Scores</a></li>
+          <li><a class="navlink" href="#footer">Contact Us</a></li>
+        </ul>
+
+        <!-- Header Control Buttons -->
+        <div class="navbar-buttons">
+          <button class="theme-toggle navbar-button" aria-label="Toggle theme">
+            Theme
+          </button>
+          <button class="audio-toggle navbar-button" aria-label="Toggle audio">
+            Audio
+          </button>
+        </div>
+
+        <!-- Mobile Navigation Toggle -->
+        <div class="hamburger-menu" aria-label="Mobile Menu Toggle">
+          <div class="hamburger-container">
+            <div class="hamburger-line top-line"></div>
+            <div class="hamburger-line middle-line"></div>
+            <div class="hamburger-line bottom-line"></div>
+          </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav-overlay">
+          <div class="mobile-nav-content">
+            <ul class="mobile-navlinks">
+              <li><a href="#about" class="mobile-navlink">About</a></li>
+              <li><a href="#partners" class="mobile-navlink">Partners</a></li>
+              <li><a href="#hiw" class="mobile-navlink">How It Works</a></li>
+              <li><a href="#offers" class="mobile-navlink">Offers</a></li>
+              <li>
+                <a href="#cricket-score-widget" class="mobile-navlink"
+                  >Scores</a
+                >
+              </li>
+              <li>
+                <a href="#services" class="mobile-navlink">Why ReddyExch</a>
+              </li>
+              <li><a href="#footer" class="mobile-navlink">Contact Us</a></li>
             </ul>
-
-            <!-- Header Controls -->
-            <div class="navbar-buttons">
-                <button class="theme-toggle navbar-button" aria-label="Toggle theme">
-                    Theme
-                </button>
-                <button class="audio-toggle navbar-button" aria-label="Toggle audio">
-                    Audio
-                </button>
+            <div class="mobile-nav-actions">
+              <button class="mobile-theme-toggle mobile-theme-button"></button>
+              <button class="mobile-audio-toggle mobile-theme-button"></button>
             </div>
+          </div>
+        </div>
+      </nav>
 
-            <!-- Mobile Navigation Toggle -->
-            <div class="hamburger-menu" aria-label="Mobile Menu Toggle">
-                <div class="hamburger-container">
-                    <div class="hamburger-line top-line"></div>
-                    <div class="hamburger-line middle-line"></div>
-                    <div class="hamburger-line bottom-line"></div>
-                </div>
-            </div>
-
-            <!-- Mobile Navigation -->
-            <div class="mobile-nav-overlay">
-                <div class="mobile-nav-content">
-                    <ul class="mobile-navlinks">
-                        <li><a href="#about" class="mobile-navlink">About</a></li>
-                        <li><a href="#partners" class="mobile-navlink">Partners</a></li>
-                        <li><a href="#hiw" class="mobile-navlink">How It Works</a></li>
-                        <li><a href="#offers" class="mobile-navlink">Offers</a></li>
-                        <li><a href="#cricket-score-widget" class="mobile-navlink">Scores</a></li>
-                        <li><a href="#services" class="mobile-navlink">Why ReddyExch</a></li>
-                        <li><a href="#footer" class="mobile-navlink">Contact Us</a></li>
-                    </ul>
-                    <div class="mobile-nav-actions">
-                        <button class="mobile-theme-toggle mobile-theme-button"></button>
-                        <button class="mobile-audio-toggle mobile-theme-button"></button>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-        <!-- Hero Section -->
-        <section class="hero" aria-labelledby="main-heading">
-            <button class="hero-btn">India's Top Exchange</button>
-            <h1 class="hero-slogan" id="main-heading">
-                <span class="hero-slogan-1">GET YOUR ONLINE ID WITH BIGGEST</span>
-                <span class="hero-slogan-2">EXCHANGE</span>
-            </h1>
-            <p class="hero-description">
-                NO.1 PLATFORM FOR PROVIDING ONLINE SPORTS ID
-            </p>
-            <div class="hero-actions">
-                <a href="http://wa.aisensy.com/+917450007079" 
-                   class="demo-id-button" 
-                   rel="noopener noreferrer">
-                   Get your DEMO ID now
-                </a>
-            </div>
-        </section>
-
-        <!-- Decorative Elements -->
-        <img src="./src/cardsmall.png" 
-             alt="Decorative Cards" 
-             class="cards-small"
-             width="200" 
-             height="150">
-        <img src="./src/cardbig.png" 
-             alt="Decorative Cards" 
-             class="cards-big"
-             width="300" 
-             height="200">
+      <!-- Hero Section -->
+      <section class="hero" aria-labelledby="main-heading">
+        <button class="hero-btn">India's Top Exchange</button>
+        <h1 class="hero-slogan" id="main-heading">
+          <span class="hero-slogan-1">GET YOUR ONLINE ID WITH BIGGEST</span>
+          <span class="hero-slogan-2">EXCHANGE</span>
+        </h1>
+        <p class="hero-description">
+          NO.1 PLATFORM FOR PROVIDING ONLINE SPORTS ID
+        </p>
+        <div class="hero-actions">
+          <a
+            href="http://wa.aisensy.com/+917450007079"
+            class="demo-id-button"
+            rel="noopener noreferrer"
+          >
+            Get your DEMO ID now
+          </a>
+        </div>
+        <!-- Decorative Images -->
+        <img
+          src="./src/cardsmall.png"
+          alt="Decorative Cards"
+          class="cards-small"
+          width="200"
+          height="150"
+        />
+        <img
+          src="./src/cardbig.png"
+          alt="Decorative Cards"
+          class="cards-big"
+          width="300"
+          height="200"
+        />
+      </section>
     </header>
 
-    <!-- MAIN CONTENT -->
+    <!-- ================= Main Content Sections ================= -->
     <main>
       <!-- CTA Section -->
-      <section class="cta" aria-label="Contact information">
-        <h2 class="cta-header">
-          <span class="whatsapp">WhatsApp</span> us on
-        </h2>
+      <section class="cta" aria-label="Contact Information">
+        <h2 class="cta-header"><span class="whatsapp">WhatsApp</span> us on</h2>
         <div class="cta-numbers">
           <a
             href="http://wa.aisensy.com/+917450007079"
@@ -190,12 +229,13 @@
           >
         </div>
       </section>
+
       <!-- About Section -->
       <section id="about" class="about" aria-label="About ReddyExch">
         <div class="gradient-background"></div>
         <div class="gradient-overlay"></div>
         <div class="moving-particles">
-          <!-- Multiple particle divs for animation -->
+          <!-- 15 Particle Divs for Animation -->
           <div class="particle"></div>
           <div class="particle"></div>
           <div class="particle"></div>
@@ -221,10 +261,9 @@
               THE BIGGEST PLATFORM FOR PROVIDING ONLINE SPORTS BETTING ID's
             </p>
             <p class="about-sub-title-2">
-              Welcome to ReddyExch, We are one of India's Top Exchange. We
-              provide 24×7 Withdrawal Facility which means that. We offer you a
-              genuinely unique sports betting experience. Besides, We also offer
-              global liquidity, best industry pricing with a single click.
+              Welcome to ReddyExch, one of India's Top Exchanges. We offer a
+              24×7 withdrawal facility, global liquidity, and best industry
+              pricing – delivering a unique sports betting experience.
             </p>
             <div class="about-actions">
               <a
@@ -264,6 +303,7 @@
           Our <span class="partners-sub-title-2">Partners</span>
         </h2>
         <div class="work-list">
+          <!-- Repeat for each partner -->
           <article class="work">
             <img
               class="partners-img"
@@ -371,7 +411,11 @@
           </article>
         </div>
         <a href="#" class="partners-btn">See More</a>
-        <img src="./src/cardsmall.png" class="partners-bg-img" alt="Background" />
+        <img
+          src="./src/cardsmall.png"
+          class="partners-bg-img"
+          alt="Background"
+        />
       </section>
 
       <!-- How It Works Section -->
@@ -441,57 +485,70 @@
             <div class="hiw-step-text">Earn from your skills</div>
           </div>
         </div>
-        
-      </article>
-      <article class="booklet-cta">
-        <div class="cta-content">
-          <h3 class="cta-title">Ready to Start?</h3>
-          <p class="cta-description">
-            Get your betting ID now and join thousands of players on India's
-            top exchange
-          </p>
-          <a
-            href="http://wa.aisensy.com/+917450007079"
-            class="cta-button"
-            rel="noopener"
-          >
-            <i class="fab fa-whatsapp"></i> Contact Us on WhatsApp
-          </a>
-        </div>
-      </article>
+        <!-- Booklet Call-to-Action -->
+        <article class="booklet-cta">
+          <div class="cta-content">
+            <h3 class="cta-title">Ready to Start?</h3>
+            <p class="cta-description">
+              Get your betting ID now and join thousands of players on India's
+              top exchange
+            </p>
+            <a
+              href="http://wa.aisensy.com/+917450007079"
+              class="cta-button"
+              rel="noopener"
+            >
+              <i class="fab fa-whatsapp"></i> Contact Us on WhatsApp
+            </a>
+          </div>
+        </article>
       </section>
 
-      <!-- Booklet Section -->
-      <section class="booklet-section"aria-labelledby="booklet-heading">
+      <!-- Booklet Section (Dynamically Generated Pages) -->
+      <section class="booklet-section" aria-labelledby="booklet-heading">
         <div class="interactive-booklet">
           <div class="booklet-container">
             <div class="booklet-pages">
-              <!-- Pages will be dynamically generated via JS -->
+              <!-- Pages will be dynamically generated via JavaScript -->
             </div>
-            
             <div class="page-turn-effect left"></div>
             <div class="page-turn-effect right"></div>
-            
             <div class="booklet-controls">
-              <button class="booklet-nav-btn prev-btn" aria-label="Previous page">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <button
+                class="booklet-nav-btn prev-btn"
+                aria-label="Previous page"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
                   <polyline points="15 18 9 12 15 6"></polyline>
                 </svg>
               </button>
-              
               <div class="page-indicator">
                 <span class="current-page">1</span>
                 <span class="separator">/</span>
                 <span class="total-pages">12</span>
               </div>
-              
               <button class="booklet-nav-btn next-btn" aria-label="Next page">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
                   <polyline points="9 18 15 12 9 6"></polyline>
                 </svg>
               </button>
             </div>
-            
             <div class="booklet-progress">
               <div class="progress-bar"></div>
             </div>
@@ -505,52 +562,67 @@
           <h2 class="sub-title">Why ReddyExch</h2>
           <div class="services-list">
             <article>
-              <i class="services-logo fa-solid fa-tower-cell" aria-hidden="true"></i>
+              <i
+                class="services-logo fa-solid fa-tower-cell"
+                aria-hidden="true"
+              ></i>
               <h3>ONLINE ID</h3>
               <p>
                 Get your online cricket/sports id with us and instantly start
-                Playing. Message us to get your ID now
+                playing. Message us to get your ID now.
               </p>
             </article>
             <article>
-              <i class="services-logo fa-solid fa-headset" aria-hidden="true"></i>
+              <i
+                class="services-logo fa-solid fa-headset"
+                aria-hidden="true"
+              ></i>
               <h2>24/7 SUPPORT</h2>
               <p>
-                We have a team of experts who are available 24/7 to guide you
-                through our WhatsApp chats.
+                Our team of experts is available 24/7 via WhatsApp to assist
+                you.
               </p>
             </article>
             <article>
-              <i class="services-logo fa-solid fa-shield-halved" aria-hidden="true"></i>
+              <i
+                class="services-logo fa-solid fa-shield-halved"
+                aria-hidden="true"
+              ></i>
               <h2>100% TRUSTED SERVICES</h2>
               <p>
-                Transparency and accuracy are the most important for us and our
-                customers. We operate in the most transparent way.
+                We prioritize transparency and accuracy, operating in the most
+                transparent way.
               </p>
             </article>
             <article>
-              <i class="services-logo fa-solid fa-money-bill-transfer" aria-hidden="true"></i>
+              <i
+                class="services-logo fa-solid fa-money-bill-transfer"
+                aria-hidden="true"
+              ></i>
               <h2>INSTANT WITHDRAWAL &amp; REFILL</h2>
               <p>
-                ReddyExch provides instant service of id withdrawal &amp; refilling
-                with a wide range of amounts.
+                Enjoy instant service for id withdrawal and refilling across a
+                wide range of amounts.
               </p>
             </article>
             <article>
-              <i class="services-logo fa-regular fa-credit-card" aria-hidden="true"></i>
+              <i
+                class="services-logo fa-regular fa-credit-card"
+                aria-hidden="true"
+              ></i>
               <h2>AVAILABLE PAYMENT METHOD</h2>
               <p>
-                Multiple payment methods are available: Net Banking, Bank Transfer,
-                Paytm, Google Pay, IMPS, PhonePe, etc.
+                Choose from multiple payment methods: Net Banking, Bank
+                Transfer, Paytm, Google Pay, IMPS, PhonePe, etc.
               </p>
             </article>
             <article>
-              <i class="services-logo fa-brands fa-nfc-directional" aria-hidden="true"></i>
+              <i
+                class="services-logo fa-brands fa-nfc-directional"
+                aria-hidden="true"
+              ></i>
               <h2>HIGH SECURITY</h2>
-              <p>
-                Security is our top priority; your data is safe and is not shared
-                at any point.
-              </p>
+              <p>Your data is secure with us and is never shared.</p>
             </article>
           </div>
         </div>
@@ -565,14 +637,17 @@
               <h3>Withdraw Offers</h3>
               <ul class="offer-list">
                 <li>
-                  <strong>Withdraw ₹10,000+</strong> → Get <strong>₹500 Bonus!</strong>
+                  <strong>Withdraw ₹10,000+</strong> → Get
+                  <strong>₹500 Bonus!</strong>
                 </li>
                 <li>
-                  <strong>Withdraw ₹50,000+</strong> → Get <strong>₹3,000 Cashback</strong> or
+                  <strong>Withdraw ₹50,000+</strong> → Get
+                  <strong>₹3,000 Cashback</strong> or
                   <strong>Apple AirPods!</strong>
                 </li>
                 <li>
-                  <strong>Withdraw ₹1,00,000+</strong> → Get <strong>₹10,000 Cashback</strong> or a
+                  <strong>Withdraw ₹1,00,000+</strong> → Get
+                  <strong>₹10,000 Cashback</strong> or a
                   <strong>Smartwatch!</strong>
                 </li>
               </ul>
@@ -581,17 +656,22 @@
               <h3>Referral Offers</h3>
               <ul class="offer-list">
                 <li>
-                  <strong>Refer 1 friend</strong> → Get <strong>₹500 instantly</strong>
+                  <strong>Refer 1 friend</strong> → Get
+                  <strong>₹500 instantly</strong>
                 </li>
                 <li>
-                  <strong>Refer 5 friends</strong> → Get <strong>₹3,000 Bonus</strong>
+                  <strong>Refer 5 friends</strong> → Get
+                  <strong>₹3,000 Bonus</strong>
                 </li>
                 <li>
-                  <strong>Refer 10 friends</strong> → Get <strong>₹10,000 Bonus + VIP Access</strong>
+                  <strong>Refer 10 friends</strong> → Get
+                  <strong>₹10,000 Bonus + VIP Access</strong>
                 </li>
                 <li>
                   <strong>Refer 50 friends</strong> → Become an
-                  <strong>Affiliate Partner &amp; Earn ₹50,000+ Monthly!</strong>
+                  <strong
+                    >Affiliate Partner &amp; Earn ₹50,000+ Monthly!</strong
+                  >
                 </li>
               </ul>
             </article>
@@ -599,7 +679,8 @@
               <h3>Jackpot Offers</h3>
               <ul class="offer-list">
                 <li>
-                  <strong>Withdraw ₹5,000+</strong> &amp; Enter the Weekly Jackpot Draw!
+                  <strong>Withdraw ₹5,000+</strong> &amp; Enter the Weekly
+                  Jackpot Draw!
                 </li>
               </ul>
               <h4>Prizes Include:</h4>
@@ -614,14 +695,15 @@
         </div>
         <article class="hiw-cta">
           <div class="hiw-cta-header-1">
-            ReddyExch is one of The Biggest Platform For Online Sports <span class="type">Betting ID's</span>
+            ReddyExch is one of The Biggest Platforms For Online Sports
+            <span class="type">Betting ID's</span>
           </div>
           <div class="hiw-cta-header-2">
             Get Your Betting Id Now. Contact Us On WhatsApp
           </div>
           <div class="hiw-cta-header-3">
-            For Any Queries, Emergencies, Feedbacks or Complaints. We Are Here To
-            Help You 24/7 With Our Online Services.
+            For Any Queries, Emergencies, Feedbacks or Complaints. We Are Here
+            To Help You 24/7.
           </div>
           <div class="hiw-cta-action">
             <div class="hiw-cta-action-header">WhatsApp us on</div>
@@ -629,15 +711,15 @@
               <div class="hiw-cta-action-button">+91 7450007079</div>
             </div>
           </div>
-          
         </article>
       </section>
+
       <!-- Celebrity Carousel Section -->
       <section class="video-carousel" aria-labelledby="celebs-heading">
-        <!-- Background effects -->
         <div class="gradient-background"></div>
         <div class="gradient-overlay"></div>
         <div class="moving-particles">
+          <!-- 15 Particle Divs for Animation -->
           <div class="particle"></div>
           <div class="particle"></div>
           <div class="particle"></div>
@@ -654,46 +736,95 @@
           <div class="particle"></div>
           <div class="particle"></div>
         </div>
-      
-        <!-- Content container -->
         <div class="carousel-container">
-          <!-- Left column - Heading and description -->
           <div class="carousel-col-1">
-            <h3 class="carousel-title">FEATURED <span class="carousel-title-brand">CELEBRITIES</span></h3>
-            <h2 class="carousel-sub-title-1">Watch exclusive celebrity videos</h2>
-            <p class="carousel-sub-title-2">Explore our collection of exclusive interviews, and special moments with your favorite celebrities. These handpicked videos showcase the best of our celebrity partnerships.</p>
-            
-            <!-- Navigation controls -->
+            <h3 class="carousel-title">
+              FEATURED <span class="carousel-title-brand">CELEBRITIES</span>
+            </h3>
+            <h2 class="carousel-sub-title-1">
+              Watch exclusive celebrity videos
+            </h2>
+            <p class="carousel-sub-title-2">
+              Explore our collection of exclusive interviews and special moments
+              with your favorite celebrities.
+            </p>
             <div class="carousel-controls">
-              <button class="carousel-button prev-button" aria-label="Previous video">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <button
+                class="carousel-button prev-button"
+                aria-label="Previous video"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 18L9 12L15 6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
                 </svg>
               </button>
               <div class="carousel-dots">
-                <!-- Dots will be added dynamically with JavaScript -->
+                <!-- Dots will be dynamically generated via JavaScript -->
               </div>
-              <button class="carousel-button next-button" aria-label="Next video">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <button
+                class="carousel-button next-button"
+                aria-label="Next video"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 6L15 12L9 18"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
                 </svg>
               </button>
             </div>
           </div>
-      
-          <!-- Right column - Carousel -->
           <div class="carousel-col-2">
             <div class="carousel-track-container">
               <div class="carousel-track">
-                <!-- Video Items -->
+                <!-- Carousel Items -->
                 <div class="carousel-item active">
                   <div class="video-wrapper">
                     <div class="video-thumbnail">
-                      <img src="./src/celeb-placeholder.png" alt="Celebrity video thumbnail" class="thumbnail-img">
+                      <img
+                        src="./src/celeb-placeholder.png"
+                        alt="Celebrity video thumbnail"
+                        class="thumbnail-img"
+                      />
                       <div class="play-button">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="12" cy="12" r="11" stroke="white" stroke-width="2"/>
-                          <path d="M9.5 7.5L16 12L9.5 16.5V7.5Z" fill="white"/>
+                        <svg
+                          width="48"
+                          height="48"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle
+                            cx="12"
+                            cy="12"
+                            r="11"
+                            stroke="white"
+                            stroke-width="2"
+                          ></circle>
+                          <path
+                            d="M9.5 7.5L16 12L9.5 16.5V7.5Z"
+                            fill="white"
+                          ></path>
                         </svg>
                       </div>
                     </div>
@@ -703,15 +834,33 @@
                     </div>
                   </div>
                 </div>
-                
                 <div class="carousel-item">
                   <div class="video-wrapper">
                     <div class="video-thumbnail">
-                      <img src="./src/celeb-placeholder.png" alt="Celebrity video thumbnail" class="thumbnail-img">
+                      <img
+                        src="./src/celeb-placeholder.png"
+                        alt="Celebrity video thumbnail"
+                        class="thumbnail-img"
+                      />
                       <div class="play-button">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="12" cy="12" r="11" stroke="white" stroke-width="2"/>
-                          <path d="M9.5 7.5L16 12L9.5 16.5V7.5Z" fill="white"/>
+                        <svg
+                          width="48"
+                          height="48"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle
+                            cx="12"
+                            cy="12"
+                            r="11"
+                            stroke="white"
+                            stroke-width="2"
+                          ></circle>
+                          <path
+                            d="M9.5 7.5L16 12L9.5 16.5V7.5Z"
+                            fill="white"
+                          ></path>
                         </svg>
                       </div>
                     </div>
@@ -721,15 +870,33 @@
                     </div>
                   </div>
                 </div>
-                
                 <div class="carousel-item">
                   <div class="video-wrapper">
                     <div class="video-thumbnail">
-                      <img src="./src/celeb-placeholder.png" alt="Celebrity video thumbnail" class="thumbnail-img">
+                      <img
+                        src="./src/celeb-placeholder.png"
+                        alt="Celebrity video thumbnail"
+                        class="thumbnail-img"
+                      />
                       <div class="play-button">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="12" cy="12" r="11" stroke="white" stroke-width="2"/>
-                          <path d="M9.5 7.5L16 12L9.5 16.5V7.5Z" fill="white"/>
+                        <svg
+                          width="48"
+                          height="48"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle
+                            cx="12"
+                            cy="12"
+                            r="11"
+                            stroke="white"
+                            stroke-width="2"
+                          ></circle>
+                          <path
+                            d="M9.5 7.5L16 12L9.5 16.5V7.5Z"
+                            fill="white"
+                          ></path>
                         </svg>
                       </div>
                     </div>
@@ -739,15 +906,33 @@
                     </div>
                   </div>
                 </div>
-                
                 <div class="carousel-item">
                   <div class="video-wrapper">
                     <div class="video-thumbnail">
-                      <img src="./src/celeb-placeholder.png" alt="Celebrity video thumbnail" class="thumbnail-img">
+                      <img
+                        src="./src/celeb-placeholder.png"
+                        alt="Celebrity video thumbnail"
+                        class="thumbnail-img"
+                      />
                       <div class="play-button">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="12" cy="12" r="11" stroke="white" stroke-width="2"/>
-                          <path d="M9.5 7.5L16 12L9.5 16.5V7.5Z" fill="white"/>
+                        <svg
+                          width="48"
+                          height="48"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle
+                            cx="12"
+                            cy="12"
+                            r="11"
+                            stroke="white"
+                            stroke-width="2"
+                          ></circle>
+                          <path
+                            d="M9.5 7.5L16 12L9.5 16.5V7.5Z"
+                            fill="white"
+                          ></path>
                         </svg>
                       </div>
                     </div>
@@ -763,14 +948,18 @@
         </div>
       </section>
 
-      <!-- Cricket Score Widget -->
-      <section id="cricket-score-widget" class="widget-section" aria-labelledby="scores-heading">
+      <!-- Cricket Score Widget Section -->
+      <section
+        id="cricket-score-widget"
+        class="widget-section"
+        aria-labelledby="scores-heading"
+      >
         <h2 class="widget-title">Live Cricket Scores</h2>
         <div id="score-frame">
           <noscript>
-            <a rel="nofollow" href="https://www.crictimes.org/cricket-scores">
-              View Live Cricket Scores
-            </a>
+            <a rel="nofollow" href="https://www.crictimes.org/cricket-scores"
+              >View Live Cricket Scores</a
+            >
           </noscript>
         </div>
         <script type="text/javascript">
@@ -784,175 +973,383 @@
         </script>
       </section>
 
+      <!-- Instagram Section -->
       <section class="insta-section">
         <div class="insta-container">
           <div class="insta-header">
             <h2 class="insta-title">FOLLOW US ON INSTAGRAM</h2>
-            <p class="insta-subtitle">Check out our latest posts and stories. Tag us in your photos to be featured!</p>
+            <p class="insta-subtitle">
+              Check out our latest posts and stories. Tag us in your photos to
+              be featured!
+            </p>
           </div>
-          
           <div class="insta-grid">
             <!-- Instagram Post 1 -->
             <div class="insta-post">
-              <img src="./src/instagram-posts/insta-post-1.jpg" alt="Instagram post">
+              <img
+                src="./src/instagram-posts/insta-post-1.jpg"
+                alt="Instagram post"
+              />
               <div class="insta-overlay">
                 <div class="insta-icon">
-                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect
+                      x="2"
+                      y="2"
+                      width="20"
+                      height="20"
+                      rx="5"
+                      ry="5"
+                    ></rect>
                     <circle cx="12" cy="12" r="4"></circle>
                     <circle cx="18" cy="6" r="1"></circle>
                   </svg>
                 </div>
                 <div class="insta-stats">
                   <span class="insta-stat">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                      ></path>
                     </svg>
                     248
                   </span>
                   <span class="insta-stat">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                      ></path>
                     </svg>
                     42
                   </span>
                 </div>
               </div>
             </div>
-            
             <!-- Instagram Post 2 -->
             <div class="insta-post">
-              <img src="./src/instagram-posts/insta-post-2.jpg" alt="Instagram post">
+              <img
+                src="./src/instagram-posts/insta-post-2.jpg"
+                alt="Instagram post"
+              />
               <div class="insta-overlay">
                 <div class="insta-icon">
-                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect
+                      x="2"
+                      y="2"
+                      width="20"
+                      height="20"
+                      rx="5"
+                      ry="5"
+                    ></rect>
                     <circle cx="12" cy="12" r="4"></circle>
                     <circle cx="18" cy="6" r="1"></circle>
                   </svg>
                 </div>
                 <div class="insta-stats">
                   <span class="insta-stat">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                      ></path>
                     </svg>
                     512
                   </span>
                   <span class="insta-stat">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                      ></path>
                     </svg>
                     76
                   </span>
                 </div>
               </div>
             </div>
-            
             <!-- Instagram Post 3 -->
             <div class="insta-post">
-              <img src="./src/instagram-posts/insta-post-3.jpg" alt="Instagram post">
+              <img
+                src="./src/instagram-posts/insta-post-3.jpg"
+                alt="Instagram post"
+              />
               <div class="insta-overlay">
                 <div class="insta-icon">
-                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect
+                      x="2"
+                      y="2"
+                      width="20"
+                      height="20"
+                      rx="5"
+                      ry="5"
+                    ></rect>
                     <circle cx="12" cy="12" r="4"></circle>
                     <circle cx="18" cy="6" r="1"></circle>
                   </svg>
                 </div>
                 <div class="insta-stats">
                   <span class="insta-stat">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                      ></path>
                     </svg>
                     326
                   </span>
                   <span class="insta-stat">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                      ></path>
                     </svg>
                     58
                   </span>
                 </div>
               </div>
             </div>
-            
             <!-- Instagram Post 4 -->
             <div class="insta-post">
-              <img src="./src/instagram-posts/insta-post-4.jpg" alt="Instagram post">
+              <img
+                src="./src/instagram-posts/insta-post-4.jpg"
+                alt="Instagram post"
+              />
               <div class="insta-overlay">
                 <div class="insta-icon">
-                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect
+                      x="2"
+                      y="2"
+                      width="20"
+                      height="20"
+                      rx="5"
+                      ry="5"
+                    ></rect>
                     <circle cx="12" cy="12" r="4"></circle>
                     <circle cx="18" cy="6" r="1"></circle>
                   </svg>
                 </div>
                 <div class="insta-stats">
                   <span class="insta-stat">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                      ></path>
                     </svg>
                     187
                   </span>
                   <span class="insta-stat">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                      ></path>
                     </svg>
                     31
                   </span>
                 </div>
               </div>
             </div>
-            
             <!-- Instagram Post 5 -->
             <div class="insta-post">
-              <img src="./src/instagram-posts/insta-post-5.jpg" alt="Instagram post">
+              <img
+                src="./src/instagram-posts/insta-post-5.jpg"
+                alt="Instagram post"
+              />
               <div class="insta-overlay">
                 <div class="insta-icon">
-                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect
+                      x="2"
+                      y="2"
+                      width="20"
+                      height="20"
+                      rx="5"
+                      ry="5"
+                    ></rect>
                     <circle cx="12" cy="12" r="4"></circle>
                     <circle cx="18" cy="6" r="1"></circle>
                   </svg>
                 </div>
                 <div class="insta-stats">
                   <span class="insta-stat">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                      ></path>
                     </svg>
                     415
                   </span>
                   <span class="insta-stat">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                      ></path>
                     </svg>
                     62
                   </span>
                 </div>
               </div>
             </div>
-            
             <!-- Instagram Post 6 -->
             <div class="insta-post">
-              <img src="./src/instagram-posts/insta-post-6.jpg" alt="Instagram post">
+              <img
+                src="./src/instagram-posts/insta-post-6.jpg"
+                alt="Instagram post"
+              />
               <div class="insta-overlay">
                 <div class="insta-icon">
-                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect
+                      x="2"
+                      y="2"
+                      width="20"
+                      height="20"
+                      rx="5"
+                      ry="5"
+                    ></rect>
                     <circle cx="12" cy="12" r="4"></circle>
                     <circle cx="18" cy="6" r="1"></circle>
                   </svg>
                 </div>
                 <div class="insta-stats">
                   <span class="insta-stat">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                      ></path>
                     </svg>
                     278
                   </span>
                   <span class="insta-stat">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                      ></path>
                     </svg>
                     49
                   </span>
@@ -960,13 +1357,16 @@
               </div>
             </div>
           </div>
-          
-          <a href="https://www.instagram.com/reddyexch_official/" class="insta-button">Follow Us</a>
+          <a
+            href="https://www.instagram.com/reddyexch_official/"
+            class="insta-button"
+            >Follow Us</a
+          >
         </div>
       </section>
     </main>
 
-    <!-- FOOTER -->
+    <!-- ================= Footer Section ================= -->
     <footer id="footer" class="footer" aria-label="Website footer">
       <div class="waves">
         <div class="wave" id="wave1"></div>
@@ -980,22 +1380,60 @@
             <ul>
               <li><a href="#about">About Us</a></li>
               <li><a href="#partners">Our Partners</a></li>
-              <li><a href="#hiw">Privacy Policy</a></li>
-              <li><a href="#hiw">Terms &amp; Conditions</a></li>
+              <li class="tooltip">
+                <a href="javascript:void(0)">Privacy Policy</a>
+                <div class="tooltip-content">
+                  <h5>Privacy Policy</h5>
+                  <p>
+                    At ReddyExch, we are committed to protecting your privacy.
+                    We collect personal information solely to provide and
+                    improve our services.
+                  </p>
+                  <p>
+                    Your information is never shared without your consent except
+                    when required by law.
+                  </p>
+                  <p>Contact our support team for more details.</p>
+                </div>
+              </li>
+              <li class="tooltip">
+                <a href="javascript:void(0)">Terms &amp; Conditions</a>
+                <div class="tooltip-content">
+                  <h5>Terms &amp; Conditions</h5>
+                  <p>
+                    By using ReddyExch services, you agree to our terms and
+                    conditions.
+                  </p>
+                  <p>
+                    Users must be 18 years or older. Misuse of our platform may
+                    result in account termination.
+                  </p>
+                  <p>We reserve the right to modify these terms at any time.</p>
+                </div>
+              </li>
             </ul>
           </div>
           <div class="footer-col">
             <h4>Connect With Us</h4>
             <div class="social-links">
-              <a href="https://www.instagram.com/reddyexch_official/" class="social-link facebook">
+              <a
+                href="https://www.instagram.com/reddyexch_official/"
+                class="social-link facebook"
+              >
                 <i class="fab fa-facebook-f"></i>
                 <span>Facebook</span>
               </a>
-              <a href="http://wa.aisensy.com/+917450007079" class="social-link whatsapp">
+              <a
+                href="http://wa.aisensy.com/+917450007079"
+                class="social-link whatsapp"
+              >
                 <i class="fab fa-whatsapp"></i>
                 <span>WhatsApp</span>
               </a>
-              <a href="https://www.instagram.com/reddyexch_official/#" class="social-link instagram">
+              <a
+                href="https://www.instagram.com/reddyexch_official/#"
+                class="social-link instagram"
+              >
                 <i class="fab fa-instagram"></i>
                 <span>Instagram</span>
               </a>
@@ -1003,22 +1441,21 @@
           </div>
         </div>
       </div>
-      <div class="bottom-bar">
-        © 2025 ReddyExch. All rights reserved.
-      </div>
+      <div class="bottom-bar">© 2025 ReddyExch. All rights reserved.</div>
     </footer>
 
-    <!-- Background Audio -->
-    <audio id="background-audio" 
-           src="path/to/your-audio-file.mp3" 
-           aria-label="Background music"
-           autoplay 
-           loop>
-    </audio>
+    <!-- ================= Background Audio ================= -->
+    <audio
+      id="background-audio"
+      src="./src/audio/background-audio.mpeg"
+      aria-label="Background music"
+      autoplay
+      loop
+    ></audio>
 
-    <!-- Structured Data -->
+    <!-- ================= Structured Data (JSON-LD) ================= -->
     <script type="application/ld+json">
-    {
+      {
         "@context": "https://schema.org",
         "@type": "SportsOrganization",
         "name": "ReddyExch",
@@ -1026,12 +1463,12 @@
         "logo": "https://reddyexch.com/src/logo-transparent.png",
         "description": "India's Top Sports Gaming Exchange providing 24/7 withdrawal facilities and best industry pricing.",
         "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+917450007079",
-            "contactType": "customer service",
-            "areaServed": "IN"
+          "@type": "ContactPoint",
+          "telephone": "+917450007079",
+          "contactType": "customer service",
+          "areaServed": "IN"
         }
-    }
+      }
     </script>
   </body>
 </html>

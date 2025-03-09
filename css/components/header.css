@@ -1,5 +1,4 @@
 /* --------------age verification------------- */
-
 .age-verification {
   position: fixed;
   top: 0;
@@ -250,7 +249,7 @@
 
 .navlink {
   color: var(--color-white);
-  opacity: 0.7;
+  opacity: 0.8;
   text-decoration: none;
   font-family: var(--header-font);
   font-size: var(--text-sm);
@@ -335,8 +334,37 @@
   color: var(--color-white);
   box-shadow: 0 0 8px var(--color-accent);
 }
+
 .audio-toggle.active::before {
   content: "\f026"; /* e.g., a muted volume icon from Font Awesome */
+}
+
+/* Active state for navbar buttons */
+.navbar-button-active {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  box-shadow: 0 0 8px var(--color-accent);
+  transform: scale(1.05);
+}
+
+/* Change icon for audio toggle when active */
+.audio-toggle.navbar-button-active::before {
+  content: "\f026"; /* Muted volume icon */
+}
+
+/* Change icon for theme toggle when active */
+.theme-toggle.navbar-button-active::before {
+  content: "\f185"; /* Sun icon for light theme */
+}
+
+/* Change icon for audio toggle when active */
+.mobile-audio-toggle.navbar-button-active::before {
+  content: "\f026"; /* Muted volume icon */
+}
+
+/* Change icon for theme toggle when active */
+.mobile-theme-toggle.navbar-button-active::before {
+  content: "\f185"; /* Sun icon for light theme */
 }
 
 /* ----------hamburger----------- */
