@@ -27,7 +27,7 @@ ReddyExch/
 │   └── script.js
 ├── src/
 │   ├── ...
-│   ├── booklet
+│   ├── booklet/
 │   ├── instagram-posts/
 │   └── img/
 │       ├── background/
