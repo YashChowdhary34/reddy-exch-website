@@ -309,6 +309,8 @@
   font-family: var(--primary-font);
   gap: clamp(0.5rem, 1.5vw, var(--space-md));
   margin-top: clamp(1rem, 2.5vw, var(--space-lg));
+  position: relative;
+  z-index: 3;
 }
 
 .about-button {
@@ -316,16 +318,16 @@
   font-weight: 500;
   text-decoration: none;
   border-radius: 0.75rem;
-  transition: var(--transition-smooth);
+  transition: all 0.3s ease-out;
   transform: translateZ(0);
   font-size: clamp(0.8rem, 1.2vw, 1rem);
   white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.about-button:hover {
-  transform: scale(1.1);
-}
-
+/* First button (WhatsApp Us) */
 .about-actions .about-button:first-child {
   background-color: var(--color-accent);
   color: whitesmoke;
@@ -334,17 +336,57 @@
 .about-actions .about-button:first-child:hover {
   background-color: #b91c1c;
   transform: translateY(-4px);
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.2);
 }
 
+.about-actions .about-button:first-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: all 0.5s;
+}
+
+.about-actions .about-button:first-child:hover::before {
+  left: 100%;
+}
+
+/* Second button (Get your DEMO ID now) */
 .about-actions .about-button:last-child {
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(4px);
   color: whitesmoke;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .about-actions .about-button:last-child:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.15);
   transform: translateY(-4px);
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.15);
+  border-color: var(--color-accent);
+}
+
+.about-actions .about-button:last-child::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+  transition: width 0.3s ease;
+}
+
+.about-actions .about-button:last-child:hover::after {
+  width: 100%;
 }
 
 .about-col-2 {
